@@ -61,7 +61,7 @@ const links = [{
         shortcut="meta_k"
         :navigation="navigation"
         :links="links"
-        :fuse="{ resultLimit: 42 }"
+        :fuse="{ resultLimit: 24 }"
       />
     </ClientOnly>
 
