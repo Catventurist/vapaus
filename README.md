@@ -1,6 +1,6 @@
 # Vapaus
 
-Building an information vault.
+Building an information vault. Starting from a **Nuxt UI** [Template](https://ui.nuxt.com/templates)
 
 ## Quick Start
 
