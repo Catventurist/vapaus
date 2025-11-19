@@ -1,82 +1,77 @@
-title: A plan for every need
-description: Our plans are designed to meet the requirements of both beginners and players. Get the right plan that suits you.
+title: Something for Everyone
+description: The plans are based on Morals, and the shown currency is in BTC divided in satoshis.
 seo:
   title: Pricing
-  description: Choose the plan that's right for you.
-navigation.icon: i-lucide-credit-card
+  description: Choose the plan, that sounds right.
+navigation.icon: i-lucide-bitcoin
 plans:
   - title: Basic
-    description: A basic plan for individuals.
+    description: A plan for good people and communities. 
     price:
-      month: $9.9
-      year: $99.9
+      month: 0 s
+      year: 0 s
     button:
       label: Get Started
       color: neutral
       variant: subtle
     features:
-      - 1 GB Storage
-      - 1 Email Account
-      - 1 Domain
-      - 1 Website
+      - 2 Storage options
+      - 1 App
       - 1 Database
-      - 1 SSL Certificate
-      - 1 Support Ticket
+      - Support
   - title: Standard
-    description: A standard plan for small teams.
+    description: For small organizations.
     price:
-      month: $19.9
-      year: $199.9
+      month: 9 s
+      year: 90 s
     highlight: true
     scale: true
     button:
-      label: Get Started
+      label: Read more
+      to: '#faq'
     features:
-      - 10 GB Storage
-      - 10 Email Accounts
-      - 10 Domains
-      - 10 Websites
+      - 10 Storage options
+      - 10 Accounts
+      - 10 Apps
       - 10 Databases
-      - 10 SSL Certificates
-      - 10 Support Tickets
+      - Support
   - title: Premium
-    description: A premium plan for large teams.
+    description: For Companies.
     price:
-      month: $29.9
-      year: $299.9
+      month: 100 s
+      year: 1000 s
     button:
-      label: Get Started
+      label: Contact us
       color: neutral
       variant: subtle
+      to: /
     features:
-      - 100 GB Storage
-      - 100 Email Accounts
-      - 100 Domains
-      - 100 Websites
+      - 100 Storage options
+      - 100 Accounts
+      - 100 Apps
       - 100 Databases
-      - 100 SSL Certificates
-      - 100 Support Tickets
+      - Support
 logos:
-  title: Trusted by the world's best
+  title: Using the latest tools
   icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
+    - i-simple-icons-hive-blockchain
+    - i-simple-icons-nuxt
+    - i-simple-icons-tailwindcss
+    - i-simple-icons-typescript
     - i-simple-icons-cloudflare
 faq:
   title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  description: Things about the monetary exchanges and contracts.
   items:
-    - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
+    - label: Is this secure?
+      content: Using the updated libraries and reading on new tech exploits makes this app quite hard to put down.
     - label: How can I cancel my subscription?
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
+      content: Contact and we will work it out.
+    - label: How does freedom work?
+      content: Personal responsibility and following the Golden Rule.
     - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
+      content: Sure. Everything is negotiable
     - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
+      content: Money is not an issue, naturally.
     - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+      content: Always can ask, the answer is based on current knowledge.

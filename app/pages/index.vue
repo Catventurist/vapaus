@@ -26,7 +26,7 @@ useSeoMeta({
       <!--     <PromotionalVideo /> -->
     </UPageHero>
 
-    <UPageSection 
+    <UPageSection
       v-for="(section, index) in page.sections" :key="index" :title="section.title"
       :description="section.description" :orientation="section.orientation" :reverse="section.reverse"
       :features="section.features">
