@@ -1,5 +1,22 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryCollection('index').first())
+import { withLeadingSlash } from 'ufo'
+import type { Collections } from '@nuxt/content'
+
+const route = useRoute()
+const { locale } = useI18n()
+const slug = computed(() => withLeadingSlash(String(route.params.slug)))
+
+const { data: page } = await useAsyncData('index-' + slug.value, () => queryCollection(('index_' + locale.value) as keyof Collections).first(), {
+  watch: [locale]
+})
+
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: $t('empty.page.title'),
+    fatal: true
+  })
+}
 
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description

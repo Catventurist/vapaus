@@ -1,13 +1,20 @@
 <script setup lang="ts">
-const route = useRoute()
+import { withLeadingSlash } from 'ufo'
+import type { PageCollections } from '@nuxt/content'
 
-const { data: post } = await useAsyncData(route.path, () => queryCollection('posts').path(route.path).first())
+const route = useRoute()
+const { locale } = useI18n()
+const slug = computed(() => withLeadingSlash(String(route.params.slug)))
+
+const { data: post } = await useAsyncData('posts-' + slug.value, () => queryCollection('posts_' + locale.value as keyof PageCollections).path(route.path).first(), {
+  watch: [locale]
+})
 if (!post.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })
+  throw createError({ statusCode: 404, statusMessage: $t('empty.post'), fatal: true })
 }
 
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-  return queryCollectionItemSurroundings('posts', route.path, {
+  return queryCollectionItemSurroundings('posts_' + locale.value as keyof PageCollections, route.path, {
     fields: ['description']
   })
 })
@@ -28,63 +35,37 @@ if (post.value.image?.src) {
   })
 } else {
   defineOgImageComponent('Saas', {
-    headline: 'Blog'
+    headline: $t('header.blog')
   })
 }
 </script>
 
 <template>
   <UContainer v-if="post">
-    <UPageHeader
-      :title="post.title"
-      :description="post.description"
-    >
+    <UPageHeader :title="post.title" :description="post.description">
       <template #headline>
-        <UBadge
-          v-bind="post.badge"
-          variant="subtle"
-        />
+        <UBadge v-bind="post.badge" variant="subtle" />
         <span class="text-muted">&middot;</span>
-        <time class="text-muted">{{ new Date(post.date).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' }) }}</time>
+        <time class="text-muted">
+          {{ new Date(post.date).toLocaleDateString(locale, { year: 'numeric', month: 'short', day: 'numeric' }) }}
+        </time>
       </template>
-
       <div class="flex flex-wrap items-center gap-3 mt-4">
         <UButton
-          v-for="(author, index) in post.authors"
-          :key="index"
-          :to="author.to"
-          color="neutral"
-          variant="subtle"
-          target="_blank"
-          size="sm"
-        >
-          <UAvatar
-            v-bind="author.avatar"
-            alt="Author avatar"
-            size="2xs"
-          />
-
+          v-for="(author, index) in post.authors" :key="index" :to="author.to" 
+          color="neutral" variant="subtle" target="_blank" size="sm">
+          <UAvatar v-bind="author.avatar" alt="Author avatar" size="2xs" />
           {{ author.name }}
         </UButton>
       </div>
     </UPageHeader>
-
     <UPage>
       <UPageBody>
-        <ContentRenderer
-          v-if="post"
-          :value="post"
-        />
-
+        <ContentRenderer v-if="post" :value="post" />
         <USeparator v-if="surround?.length" />
-
         <UContentSurround :surround="surround" />
       </UPageBody>
-
-      <template
-        v-if="post?.body?.toc?.links?.length"
-        #right
-      >
+      <template v-if="post?.body?.toc?.links?.length" #right>
         <UContentToc :links="post.body.toc.links" />
       </template>
     </UPage>

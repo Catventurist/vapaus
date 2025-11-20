@@ -1,11 +1,31 @@
 <script setup lang="ts">
-const route = useRoute()
+import { withLeadingSlash } from 'ufo'
+import type { PageCollections } from '@nuxt/content'
 
-const { data: page } = await useAsyncData('blog', () => queryCollection('blog').first())
-const { data: posts } = await useAsyncData(route.path, () => queryCollection('posts').all())
+const route = useRoute()
+const { locale } = useI18n()
+const slug = computed(() => withLeadingSlash(String(route.params.slug)))
+
+const { data: page } = await useAsyncData('blog-' + slug.value, () => queryCollection('blog_' + locale.value as keyof PageCollections).path(route.path).first(), {
+  watch: [locale]
+})
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: $t('empty.post'), fatal: true })
+}
+
+const { data: posts } = await useAsyncData(route.path, () => queryCollection('posts_' + locale.value as keyof PageCollections).all(), {
+  watch: [locale]
+})
 
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
+
+defineI18nRoute({
+  paths: {
+    en: '/blog',
+    fi: '/blogi'
+  }
+})
 
 useSeoMeta({
   title,
@@ -23,7 +43,6 @@ defineOgImageComponent('Saas')
       v-bind="page"
       class="py-[50px]"
     />
-
     <UPageBody>
       <UBlogPosts>
         <UBlogPost
@@ -33,7 +52,7 @@ defineOgImageComponent('Saas')
           :title="post.title"
           :description="post.description"
           :image="post.image"
-          :date="new Date(post.date).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' })"
+          :date="new Date(post.date).toLocaleDateString(locale, { year: 'numeric', month: 'short', day: 'numeric' })"
           :authors="post.authors"
           :badge="post.badge"
           :orientation="index === 0 ? 'horizontal' : 'vertical'"

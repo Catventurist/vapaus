@@ -1,0 +1,36 @@
+title: UKK
+description: Useimmin kysytyt kysymykset
+categories:
+  - title: Palvelut UKK
+    questions:
+      - label: Mitä on tarjolla?
+        content: |
+          Keskittynyt kääntämiseen ja nettikehittelyyn, ulkoasuista lähtien. Tavoitteena tehdä mahdollisimman monipuolisia ja näppäriä ohjelmistoja.
+      - label: Menettelytavat?
+        content: |
+          Paljon kommunikointia ja suunnittelua, joskus yrityksen ja erehdyksen kautta. Käyttökokemus on tärkeä osa-alue, tarpeiden tyydyttämisen lisäksi.
+      - label: Kenen kanssa?
+        content: |
+          Oikeasti yhteistä hyvää tuottavat yhteisöt ja projektit, joissa ei ole turhaa byrokratiaa. Eurojen ulkopuolella toimiminen toivottavaa, kryptojen käyttäminen suositeltavaa.
+  - title: Korvaus ja aikataulu
+    questions:
+      - label: Mitä projekti yleensä kustantaa?
+        content: |
+          Riippuen tarkoitusperästä. Oikean avoimen lähdekoodin ratkaisut ovat ilmaisia, aivojen ja tietotaitojen käytöstä mielellään saisi korvauksen. Kustannus kasvaa projektin koon mukaan, firmoille lähtien 9s laajentuen 100s:n. Konsultaatiota tarpeen mukaan.
+      - label: Kuinka korvaus toteutetaan?
+        content: |
+          Yleensä 40% etumaksua ja loput 60% valmistuessa. Kryptovaluutat käy.
+      - label: Kauanko kestää?
+        content: |
+          Aikataulu riippuu projektin koosta ja monimutkaisuudesta. Pienemmät hoituu yleensä kuukauden sisällä, suuremmissa voi mennä 2-4kk. Aikataulutus hahmottuu suunnitelman perkaamisen mukaan.
+      - label: Minkälaista tukea on tarjolla?
+        content: |
+          Neuvonta ja opastus kuuluu pakettiin, oli se ulkoasu, lisätoiminnot tai perus ylläpito. Kaikesta voi neuvotella.
+  - title: Kehittely
+    questions:
+      - label: Ajatuskulku?
+        content: |
+          Ongelmanratkaisua käyttämällä päivittäin koppa pysyy kasassa ja virkeänä. Uusimpia koodivillityksiä seuraamalla inspiraatio kasvaa ja ravinteikasta ruokaa nauttimalla auringonvalon lomassa kroppakin pysyy kunnossa.
+      - label: Mitä näkymiä?
+        content: |
+          Kehitys kehittyy, toivon mukaan hajautetut yhteisöt ja sovellukset yleistyvät mahdollisuuksien karsiutuessa ja resurssien niukentuessa keinotekoisesti.

@@ -1,19 +1,25 @@
 <script setup lang="ts">
 import type { PageLink } from '@nuxt/ui'
+import { withLeadingSlash } from 'ufo'
+import type { PageCollections } from '@nuxt/content'
 
 definePageMeta({
   layout: 'docs'
 })
-
+const localePath = useLocalePath()
 const route = useRoute()
+const { locale } = useI18n()
+const slug = computed(() => withLeadingSlash(String(route.params.slug)))
 
-const { data: page } = await useAsyncData(route.path, () => queryCollection('docs').path(route.path).first())
+const { data: page } = await useAsyncData('docs-' + slug.value, () => queryCollection('docs_' + locale.value as keyof PageCollections).path(route.path).first(), {
+  watch: [locale]
+})
 if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+  throw createError({ statusCode: 404, message: $t('empty.docs'), fatal: true })
 }
 
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-  return queryCollectionItemSurroundings('docs', route.path, {
+const { data: surround } = await useAsyncData(`${route.path}-surround-` + slug.value, () => {
+  return queryCollectionItemSurroundings('docs_' + locale.value as keyof PageCollections, route.path, {
     fields: ['description']
   })
 })
@@ -32,39 +38,21 @@ defineOgImageComponent('Saas')
 
 const tocLinks = ref<PageLink[]>([
   {
-    label: 'Edit',
+    label: $t('links.edit'),
     icon: 'i-lucide-file-pen',
     to: `https://github.com/Catventurist/vapaus/edit/cat/content/${page?.value?.stem}.md`
   },
   {
-    label: 'Star',
+    label: $t('links.star'),
     icon: 'i-lucide-star',
     to: 'https://github.com/catventurist/vapaus'
   },
   {
-    label: 'Releases',
-    icon: 'i-lucide-rocket',
-    to: '/changelog'
-  }
-])
-
-/* const links = ref<PageLink[]>([
-  {
-    label: $t('links.edit'),
-    icon: 'i-lucide-file-pen',
-    to: `https://github.com/nuxt/ui/edit/v4/docs/content/${page?.value?.stem}.md`
-  },
-  {
-    label: $t('links.star'),
-    icon: 'i-lucide-star',
-    to: 'https://github.com/catventurist'
-  },
-  {
     label: $t('links.releases'),
-    icon: 'i-lucide-rocket',
+    icon: 'i-lucide-list-check',
     to: localePath('/changelog')
   }
-]) */
+])
 </script>
 
 <template>

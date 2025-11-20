@@ -1,0 +1,965 @@
+pricing:
+  monthly: Kuukausittain
+  yearly: Vuosittain
+  month: /kk
+  year: /v
+error:
+  minlength: Liian lyhyt. Tarvitaan yli 1 kirjain.
+submit:
+  success:
+    title: Onnistui
+    description: Lomake on lähetetty (tulossa).
+task:
+  completed: Valmis
+header:
+  switchto: Vaihda tila
+  language: Kieli
+  search: Etsi
+  theme: Teema
+  mode: Tila
+  login: Kirjaudu
+  signin: Rekisteröidy
+  user: Käyttäjä
+  close: Sulje
+  open: Avaa
+  logout: Uloskirjaus
+  sidebar: Sivupaneeli
+  docs: Dokumentit
+  pricing: 
+    title: Hintoja
+    description: Jokaiselle jotain.
+  blog: Blogi
+  changelog: 
+    title: Muutoslista
+    description: Kehittymisen aikajana.
+  resources: Resurssit
+  help: Apukeskus
+  roadmap: Suunnitelma
+  features: Ominaisuuksia
+  community: Yleiset
+  about: Tietoa
+  hobbies: Harrastukset
+  subscribed:
+    title: Tilaus
+    description: Sähköpostilista tulossa.
+  subscribe: 
+    title: Tilaa
+    description: Tilaa uutiskirje
+    enter: Lisää sähköposti
+  projects: 
+    title: Projektit
+    description: Linkkejä jänniin juttuihin.
+  faq: UKK
+  introduction:
+    title: Esittely
+    description: Tervetuloa tutustumaan lähemmin.
+  essentials: 
+    title: Sisältö
+    description: Ohjeita kauniin sisällön luomiseen.
+  pages: Sivut
+  events:
+    title: Tapahtumat
+    description: Tietoa menneestä ja tulevasta.
+  tasks: 
+    title: Tehtävää
+    description: Keskeneräisiä asioita.
+  animations: 
+    title: Animaatiot
+    description: Tailwind & Motion.
+empty: 
+  page: 
+    title: Sivua ei löytynyt
+    description: Ei vielä sisältöä
+    error: Harmiksemme sivua ei löytynyt.
+  authors: 
+    title: Käyttäjiä ei löytynyt
+    description: Ei ketään
+  themes: Teemaa ei löytynyt
+  blog: Julkaisua ei löytynyt
+  docs: Dokumenttia ei löytynyt
+  log: Listaa ei löytynyt
+  faq: Kysymyksiä ei löytynyt
+  tasks: Tehtäviä ei löytynyt
+events:
+  title: Luo Tapahtumasi
+  description: Täytä kaavake luodaksesi uuden tapahtumailmoituksen.
+  viewall: Selaa kaikkia tapahtumia
+  select: Valitse
+  selectdate: Valitse päivä
+  listen: Kuuntele
+  watch: Katsele
+  choose: Valitse
+  pick: Poimi
+  upload: 
+    title: Lataa
+    file: tiedostoa
+    selected: valittuna
+  savedraft: Tallenna muistiin
+  create: Luo tapahtuma
+  conference:
+    title: Konferenssi
+    description: Keskustelua ja verkostoitumista
+  workshop:
+    title: Työpaja
+    description: Konkretian kautta oppimista ja tekemistä
+  meetup:
+    title: Kokous
+    description: Samanarvoisten kommunikaatiota
+  webinar:
+    title: Webinaari
+    description: Virtuaalinen esittely tai seminaari videon välityksellä
+  form:
+    basic: Perustietoja
+    title: Tapahtuman nimi
+    name: Järjestäjä
+    description: Kuvaus
+    type: Tapahtuman tyyppi
+    venue: Paikka
+    tags: Tapahtuman kategoriat
+    images: Tapahtuman kuvat
+links:
+  title: Yhteisö
+  edit: Muokkaa sivua
+  star: GitHub-tähti
+  releases: Muutokset
+  copymd: Kopioi Markdown-linkki
+  copyclip: Kopioitu leikepöydälle
+  copypage: Kopioi sivu
+  viewmd: Katso Markdown-sivuna
+lists:
+  title: Nuxt
+  description: Mainio alusta kaikenlaiseen koodaukseen.
+  updated: Päivitetty
+  suggested: Suositellut listat
+  future: Tutut
+  stack: Kokoelmani
+  inspiration: Inspiroivat
+  create: Luo lista
+  give: Anna tähti
+  detailsc: Yhteystiedot
+  editc: Muokkaa tietoja
+  phone: Puhelinnumero
+  email: Sähköposti
+  website: Nettisivu
+  social: SOME
+  address: Osoite
+graph:
+  activitiesy: lisäystä viime vuonna
+  less: Enemmän
+  more: Vähemmän
+  contributions: lisätty
+notifications:
+  title: Ilmoitukset
+  description: Sinulla on 3 lukematonta viestiä.
+  push: Push-ilmoitukset
+  send: Lähetä ilmoitukset laitteeseen.
+  mark: Merkitse kaikki luetuiksi
+  call: Puhelusi on varmistettu.
+  message: Uusi viesti on saapunut!
+  subscription: Jäsenyytesi on pian päättymässä!
+  hour: tunti sitten
+  hours: tuntia sitten
+stream:
+  start: Aloita kirjoitus
+  restart: Uudestaan
+login:
+  title: Kirjaudu
+  description: Kirjaudu tilille jatkaaksesi
+  or: tai
+  name:
+    title: Nimi
+    placeholder: Luo käyttäjänimi
+    invalid: Nimi tarvitaan
+  email:
+    title: Sähköposti
+    placeholder: Lisää sähköposti
+    invalid: Sopimaton osoite
+  password:
+    title: Salasana
+    placeholder: Lisää salasana
+    invalid: Sopimaton salasana
+  remember: Muista minut
+  with:
+    google: Google-kirjautuminen
+    github: Github-kirjautuminen
+  submitted: Lähetetty
+  welcome:
+    title: Tervetuloa
+    description: Ei vielä tiliä?
+  signup: Rekisteröidy
+  forgot: Salasana hukassa?
+  disclaimer: Kirjautumalla hyväksyt
+  terms: Käyttöehdot
+  message: 'Kirjauduttu käyttäjänä '
+signup:
+  title: Rekisteröidy
+  description: Luo tili aloittaaksesi
+  name:
+    title: Nimi
+    placeholder: Lisää nimimerkki
+    required: Nimi vaaditaan
+  with:
+    google: Google-tunnuksilla
+    github: Github-tunnuksilla
+  create: 
+    title: Luo tili
+    description: Tili hukassa?
+  message: 'Ole tervetullut, '
+signin:
+  title: Kirjaudu
+feedback:
+  veryhelpful: Todella hyödyllinen
+  heplful: Menettelee
+  nothelpful: Hyödytön
+  confusing: Sekava
+  errorlenght: Lisää vähintään 10 kirjainta tai jätä kenttä tyhjäksi
+  thank:
+    title: Kiitokset palautteestasi!
+    description: Näkemyksesi auttaa meitä parantamaan sisältöä.
+  question: 'Oliko tästä hyötyä?'
+  rateas: 'Valitse '
+  additional: 'Lisätietoja (valinnainen)'
+  thoughts: 'Jaa ajatuksesi... (valinnainen)'
+  provide: Tarjoa lisätietoja kokemuksestasi sivustolla
+  issending: Lähetetään palautetta...
+  issend: Lähetä palautetta
+  sending: Lähetetään...
+  send: Lähetä
+  sendfeed: Lähetetään palautettasi...
+  expanded: Palautelaatikko on laajennettu. Voit lisätä enemmän komponentteja.
+  details: Tiedot
+  percantage: Prosentti
+  status: Tila
+  lastw: Viimeiset 7 päivää
+steps:
+  prev: Edellinen
+  next: Seuraava
+  problem: 
+    title: Ongelma
+    description: Teesi
+    content: Luo ongelma
+  reaction:
+    title: Reaktio
+    description: Antiteesi
+    content: Vetoa tunteisiin
+  solution:
+    title: Ratkaisu
+    description: Synteesi
+    content: Pakota ratkaisu
+  start:
+    title: Alkurysäys
+    description: Ajatusten ja työkalujen kartoitusta
+  design:
+    title: Suunnitteluvaihe
+    description: Pohditaan miten saadaan kaikki toimimaan yhteen
+  dev:
+    title: Kehityskokeilut
+    description: Koodin naputtelua ja virheiden korjailua
+  dep:
+    title: Testaus & Julkistus
+    description: Viimeiset viilaukset ja kaikkien kokeiltavaksi
+table:
+  date: Päiväys
+  label: Nimi
+  description: Kuvaus
+  status: Tila
+  error: Virhe
+  warning: Varoitus
+  translation: Käännökset
+  animation: Animaatiot
+  route: Reititys
+  locale: Suomeksi
+  asc: Nouseva
+  desc: Laskeva
+  filter: Naputa nimi...
+  copyid: Kopioi ID
+  copiedid: ID kopioitu leikepöydälle!
+  edit: Muokkaa
+  delete: Poista
+animation:
+  animations: Animaatioita
+  read: Lue dokumentaatiota
+  explore: Selaa komponentteja
+  motion:
+    title: Motion Animaatioita
+    description: Kun CSS ei riitä
+  css:
+    title: CSS Animaatioita
+    description: Tailwind & perus CSS-tekniikoita
+  textcss:
+    title: CSS Tekstianimaatioita
+    description: Tailwind & perus CSS versioita
+  textmotion:
+    title: Motion Tekstianimaatioita
+    description: Motion-pohjaiset
+  blur:
+    title: Sumea
+    description: Sumea teksti
+    text: Sumeasti
+  circular: 
+    title: Ympyrä
+    description: Tekstiä ympyrässä kehässä
+    text: Ympäri mennään
+  shiny: 
+    title: Loiste
+    description: Loistelias teksti
+    text: Loistava tulevaisuus
+  pressure: 
+    title: Paine
+    description: Painetta kirjaimiin
+    text: Paineen alla
+  curved: 
+    title: Kaari
+    description: Tekstiä kaaressa vedettävissä
+    text: Teksti liikkuu tai pysähtyy
+  gradient: 
+    title: Gradientti
+    description: Vaihtuva väritys
+    text: Tehtyä tekstiä
+  decrypt: 
+    title: Kryptaus
+    description: Tekstistä koodiksi
+    text: Kryptailemme
+  rotate:
+    title: Vaihtuvat
+    description: Sanoja esille
+    text: Vaihtelee
+  dock:
+    title: Palkki
+    description: Kuvakkeet liikkuu ja kasvaa
+  compare:
+    title: Vertailu
+    description: Tumman ja vaalean kuvan vertailu
+  flip:
+    title: Vaihtelevat
+    description: Tekstit ilmestyy
+  wordf: Kirjoittaminen
+  words: Oppiminen
+  wordt: Puhuminen
+  worda: Kuuntelu
+  focus: 
+    title: Kohdennus
+    description: Sanojen korostus
+    text: Tärkeisiin juttuihin keskittyminen
+  morph:
+    title: Sulautuva
+    description: Sanat sekoittuu
+  multi:
+    title: Sivuista
+    description: Esille oikealta ja vasemmalta
+  pull:
+    title: Nousu
+    description: Pohjalta päin
+    text: Hops
+  beam:
+    title: Reunasäde
+    description: Liikkuvat koristeet
+    text: Reunalla
+  stars:
+    title: Tähtitausta
+    description: Liikkuvia tähtösiä
+  scratch:
+    title: Raaputus
+    description: Arpa jolla voittaa aina
+  gallery: 
+    title: Pyörivä galleria
+    description: Rullattavia ja raahattavia kuvia
+  dragtree: 
+    title: Raahattava tiedostopuu
+    description: Liikuttele tiedostoja
+  fstars: 
+    title: Tippuvat tähdet
+    description: Tähdekäs taustakuva
+  neonc: 
+    title: Neon-kortti
+    description: Loistavat reunat
+  spotl: 
+    title: Valokiila
+    description: Kursoria seuraava valo
+  squaresbg: 
+    title: Taustalaatikot
+    description: Liikkuvat neliöt
+  gcard: 
+    title: Git-kortti
+    description: Paketin tietoja
+  ncard: 
+    title: Ilmoitukset-kortti
+    description: Valitse ilmoitukset
+  pan: 
+    title: Kuva seuraa
+    description: Kursorin mukaan
+  magnet:
+    title: Magneetti
+    description: Seuraa kursoria
+  textshadow:
+    title: Tekstin varjoja
+    description: Vaihtelevia
+corner:
+  title: Kulmat
+  description: Jos selain tukee
+  square:
+    title: Suorakulmio
+    description: Normaali
+  round:
+    title: Pyöristetty
+    description: Pyöreää
+  scoop:
+    title: Kauhottu
+    description: Pyöreä leikkaus
+  bevel:
+    title: Särmä
+    description: Kulman leikkaus
+  notch:
+    title: Lovi
+    description: Neliöleikkaus
+  squircle:
+    title: Squircle
+    description: Välimalli
+text:
+  neon:
+    title: NEON
+    description: Neon loiste
+  fire:
+    title: TULTA
+    description: Liekki
+  chromatic:
+    title: SIVU
+    description: Kromaattinen
+  rainbow:
+    title: KIRJO
+    description: Värikäs
+  glitch:
+    title: HÄIRIÖ
+    description: Digitaalinen
+  holo:
+    title: HOLO
+    description: Holografinen
+  blur:
+    title: SUMEA
+    description: Lievä sumennus
+date:
+  today: Tänään
+  yesterday: Eilen
+  lastwd: Edelliset 7 päivää
+  lastmd: Edelliset 30 päivää
+  thism: Tämä kuukausi
+  lastm: Edellinen kuukausi
+  thisq: Tämä kuukausi
+  lastq: Edellinen neljännes
+  thisy: Tämä vuosi
+  lasty: Edellinen vuosi
+  invalidd: Väärä päiväys
+profile:
+  joined: Liittynyt
+  following: Seurattua
+  followers: Seuraajaa
+  location: Maailma
+  posts: Julkaisut
+  replies: Vastaukset
+  highlights: Kohokohdat
+  media: Media
+  reactions: Reaktiot
+  username: Cat
+  usertag: cat
+  userbio: Seikkailua ja koodausta.
+  follownum: "0"
+  followernum: "0"
+nav:
+  site:
+    title: Vapaus
+    description: Koodausta ja jatkuvaa oppimista
+  pages:
+    title: Sivut
+    blogs: 
+      title: Julkaisut
+    dev: 
+      title: Kehitys
+      description: Sivuston kehittelysmuistio
+    projects:
+      title: Projektit
+      view: Tutustu
+      wp:
+        title: Wordpress-blogeja
+        description: Erilaisia WP-sivustoja
+      ecency:
+        title: Ecency dAppi
+        description: Hajautettu ja sensuurivapaa SOME
+      docs:
+        title: Shadcn Docs
+        description: Dokumentaatiota Shadcn-pohjalla
+      movies:
+        title: Nuxt Movies
+        description: Leffalistaus eri kielillä
+    speaking: Puheet
+    authors:
+      title: Ihmiset
+      description: Kasassa oleva porukka
+    icons:
+      title: Kuvakkeet
+      description: Animoituja ikoneita
+    docs:
+      title: Lue
+    learn:
+      title: Opi muualla
+      styling:
+        title: Tyyli
+        description: "Tailwind 4 säästää näppäimistöä ja aikaa."
+      animation:
+        title: Animaatiot
+        description: Motion tekee sen, mihin CSS ei veny.
+      access:
+        title: Käytettävyys
+        description: Käytä näppistä, hiirtä tai sormea.
+      typo:
+        title: Typografia
+        description: Tekstin luettavuuden parannuksia.
+    home: Koti
+    appereance: Ulkoasu
+    about: 
+      title: Lyhyesti
+      description: Tekijästä
+    skills:
+      title: Taidot
+      description: Ja tiedot
+    faq:
+      title: UKK
+      description: Usein kysyttyjä kysymyksiä
+greeting:
+  title: Tervetuloa
+  description: Miltä tuntuu?
+english: English
+finnish: Suomi
+theme: 
+  title: Teema
+  primary: Pääväri
+  tone: Sävy
+  radius: Pyöristys
+  black: Musta
+  mode: Teema
+  dark: Tumma
+  light: Vaalea
+  system: Oma
+  slate: Liuske
+  gray: Harmaa
+  zinc: Sinkki
+  neutral: Neutraali
+  stone: Kivi
+  red: Punainen
+  orange: Oranssi
+  amber: Pihka
+  yellow: Keltainen
+  lime: Lime
+  green: Vihreä
+  emerald: Smaragdi
+  teal: Sinivihreä
+  cyan: Syaani
+  sky: Taivas
+  blue: Sininen
+  indigo: Indigo
+  violet: Violetti
+  purple: Purppura
+  fuchsia: Fuksia
+  pink: Pinkki
+  rose: Ruusu
+quotes:
+  title: Lainauksia
+  description: Fiksuilta tyypeiltä
+  fuller:
+    quote: Asiat eivät muutu realiteettejä vastustamalla. Muuttaakseen jotain täytyy luoda malli, joka tekee nykyisen tarpeettomaksi.
+    name: Buckminister Fuller
+    description: Suunnittelija
+  terence: 
+    quote: Mielikuvitus on kultainen polku kaikkialle.
+    name: Terence McKenna
+    description: Tietäjä
+  stamets: 
+    quote: Pakuri on oudoimpia sieniä maailmassa. Koivuissa kasvava sieniparasiitti on kovakuorinen ja väriltään musta muodostelma, joka näyttää räjähtävältä kasvaimelta.
+    name: Paul Stamets
+    description: Mykologi
+  mate:
+    quote: Kun tuomitsen toisia jyrkästi, se johtuu siitä että tunnen tai näen toisessa jonkin ominaisuuden, jota en halua tunnistaa.
+    name: Gabor Maté
+    description: Tutkija
+features: Ominaisuuksia
+icons:
+  title: Kuvakkeita
+  description: Motionilla animoitu
+  titleani: Animoituja Kuvakkeita
+  titledrag: Raahattavia Satunnaisia
+about: 
+  badge: Minusta
+  title: Jatkuvaa oppimista ja
+  highlight: Koodailua
+  description: Tavoitteena on tarjota yhteisöille päteviä apuvälineitä, joden avulla vapaus maksimoidaan.
+  vision:
+    badge: Visio
+    description: Maailma, jossa kaikille on tarpeeksi, jolloin luominen ja päättelykyky on voimissaan.
+  mission:
+    badge: Tehtävä
+    description: Tiedon vapaa kulku ja sensuurivapaus.
+  approach: 
+    badge: Lähestymistapa
+    title: Ideoista todeksi
+    description: Jatkuva kasvu virtuaalimaailmassa.
+  cta: 
+    badge: Luovuus
+    title: Ajatusten esittäminen
+    description: Erilaisia tapoja ilmaista itseään
+    first: Katso mahdollisuuksia
+    second: Opi kulttuureita
+    overlay:
+      title: Parhauden tavoittelua
+      description: Paljon mahdollisuuksia
+  read:
+    title: Lukeminen
+    description: Tietoa on valtavasti saatavilla
+    more: Lue lisää
+  learn:
+    title: Oppiminen
+    description: Tiedonkäsittelyä ja johtolankojen seuraamista
+    more: Opi lisää
+  know:
+    title: Tieto
+    description: Harmaiden aivosolujen käyttöä päätoksissä
+    more: Tiedä enemmän
+  stats:
+    ideas: Mietiskeltyjä ideoita
+    countries: Paikkoja seikkailtuna
+    comments: Positiivisia kommentteja
+    available: Lähestyttävissä virtuaalisesti
+prose:
+  cssvariable: CSS Muuttuja
+  description: Kuvaus
+  dataattr: Datamuoto
+  value: Arvo
+  key: Avain
+pluraltime: a
+words: Appilan pappilan apupapin papupata pankolla kiehuu ja kuohuu. Appilan pappilan piski, paksuposki, pakkas kapsäkin ja pinkaisi juoksuun. Appilan pappilan piski, paksuposki pisti apupapin papupadan poskeensa.
+hello: Moikka!
+mode: Nauti
+explore: "Tutustu →"
+site:
+  title: Voima
+  description: Vapaa ja avoin alusta
+  offer: Julkaisupäivä lähenee
+values:
+  title: Arvomaailma
+  description: Päämäärät avoimesti esillä.
+  innovation:
+    title: Kekseliäisyys
+    description: Olettamien kyseenalaistamista ja uusien mahdollisuuksien etsintää.
+  integrity:
+    title: Rehellisyys
+    description: Toimimme avoimesti, eettisesti ja esteittä.
+  collaboration:
+    title: Yhteistyö
+    description: Yhdistelemme eri näkemyksiä ja kokemuksia saavuttaakseemme enemmän.
+  excellence:
+    title: Ahkeruus
+    description: Luomme hyvää laatua ja tietoa, joka sopii moneen tarkoitukseen.
+  adaptability:
+    title: Sopeutuminen
+    description: Muutos on pysyvää ja mukaudumme sen mukaan.
+  empathy:
+    title: Empatia
+    description: Pyrimme ymmärtämään tunteet, tarpeet ja kokemukset.
+  purpose:
+    title: Tarkoitus
+    description: Näkyvää ja leviävää tekemistä ja esimerkkiä.
+  transparency:
+    title: Läpinäkyvää
+    description: Koodi on avointa, vain tärkeät tiedot pidetään kryptattuna.
+  sustainability:
+    title: Kestävyys
+    description: Ympäristön ja kulttuurin näkökohdat otetaan huomioon toiminnassa.
+social:
+  badge: SOME
+  title: Viimeisimmät
+  description: Pysy mukana yhteisön kehityksessä ja kommunikoinnissa.
+  more: Kaikki julkaisut
+skills:
+  frontend: Käyttöliittymä
+  backend: Taustajärjestelmät
+  toolscat: Työkalut
+  mobile: Känny
+  expert: Taituri
+  advanced: Edistynyt
+  proficient: Pätevä
+  intermediate: Perus
+  badge: Työkalut
+  title: Taidot & Teknologiat
+  description: Lyhyt listaus tiedoista ja taidoista itsetutkiskelun kautta.
+  technical: Tekniset taidot
+  tools: Työkalut
+  prof: Taitotaso
+  blockchain: Lohkoketju
+  cloud: Pilvi
+  browser: Selain
+video : 
+  title: Video
+  description: Vanhoilta seikkailuajoilta.
+  badge: Katsele
+  location: Kiva puisto Espanjassa
+  feeling: Vapauden tunne
+  sound: Luonnon ääniä
+  hive: Hivessä
+  youtube: Youtubessa
+contact: 
+  title: Yhteydenotto
+  description: Kommunikaatio ratkaisee
+  headline: Ota yhteyttä
+  selectdep: Valitse osasto
+  responsetime: Arvioitu vastausaika
+  hours: ' tuntia'
+  firstname: Etunimi
+  lastname: Sukunimi
+  email: Sähköposti
+  subject: Aihe
+  subjectdesc: Lyhyt kuvaus
+  message: Viesti
+  messagedesc: Kerro lisää...
+  urgent: Tämä on kiireellinen
+  sendto: Lähetä osastolle
+  sales: Myynti
+  support: Tuki
+  billing: Laskutus
+  technical: Tekniset
+  general: Yleinen
+  platforms: Alustat
+  knowledge: 
+    title: Tietopankki
+    description: Paljon jännää tietoa
+    link: Opettele
+  faq: 
+    title: UKK
+    description: Yleisimpiä kysymyksiä
+    link: Tutustu
+  developer:
+    title: Kehittäjille
+    description: Jotain koodaamisesta kiinnostuneille
+    link: Teknistä
+faq:
+  title: UKK
+  description: Vastauksia moniin kysymyksiin
+  what:
+    title: Mitä teet?
+    description: Koodailua ja kahvin hörppimistä.
+  which: 
+    title: Mikä kiinnostaa?
+    description: Oppiminen, kirjoittaminen, kävely ja kokkailu.
+  who: 
+    title: Keitä arvostat?
+    description: Terence Mckenna, Paul Stamets.
+  where:
+    title: Missä olet?
+    description: Aurinkorannoilla.
+  from: 
+    title: Mistä olet?
+    description: PohjoisPohjanMaalta.
+  to: 
+    title: Minne olet menossa?
+    description: Ken tietää?
+  how: 
+    title: Kuinka menee?
+    description: Inspiroitunut ja hieman janottaa.
+  why: 
+    title: Motiivit?
+    description: Vapauden maksimointi kaikessa.
+  kind:
+    title: Minkälainen persoona?
+    description: Kissamainen, ystävällinen mutta erakko.
+  many:
+    title: Montako lasta?
+    description: "1."
+  when: 
+    title: Milloin asiat menee parempaan suuntaan?
+    description: Toivottavasti pian.
+  roadmap: 
+    title: Suunniteltu edistyminen
+    description: Kauanko kestää projektin eri vaiheissa.
+carousel:
+  title: Karuselli
+  description: Kuvia ja tietoja
+  creativity: 
+    slogan: Ihmisen parhaita ominaisuuksia
+    description: Ajatukset sujuvat moneen.
+    spirituality: Henkisyys
+    consciousness: Tietoisuus
+    enlightenment: Ymmärrys
+    title: Luovuus
+    chakra: Kruunu
+  intuition: 
+    slogan: Seuraa sitä ja ylläty.
+    description: Itsensä oppiminen on vaikeaa.
+    wisdom: Viisaus
+    insight: Näköalat
+    clarity: Selvyys
+    title: Intuitio
+    chakra: "3. silmä"
+  communication: 
+    slogan: Puhu ja ilmaise itseäsi
+    description: Kuultuna olo on kivaa.
+    selfexpress: Itseilmaisu
+    truth: Totuus
+    title: Kommunikaatio
+    chakra: Kurkku
+  empathy: 
+    slogan: Suurimmat tunteet
+    description: Vaikeimpia hallita
+    love: Rakkaus
+    compassion: Myötätunto
+    relationships: Suhteet
+    title: Empatia
+    chakra: Sydän
+  decisions: 
+    slogan: Päätöksiin päätyminen
+    description: Tehdään oikein.
+    personalpower: Oma voima
+    confidence: Itsevarmuus
+    title: Päätökset
+    chakra: Solar Plexus
+  connection: 
+    slogan: Tekeminen muiden vuoksi
+    description: Elämästä seikkailu.
+    sexuality: Seksuaalisuus
+    emotions: Tunteet
+    title:  Yhteys
+    chakra: Sackraali  
+  stability: 
+    slogan: Perustarpeet
+    description: Kuinka ne saavutetaan
+    grounding: Maadoitus
+    security: Turva
+    title: Vakaus
+    chakra: Juuri
+order:
+  address:
+    title: Osoite
+    description: Tiedot osoitteesta
+  shipping:
+    title: Kuljetus
+    description: Valitse kuljetustapa
+  checkout:
+    title: Valmis
+    description: Varmista tilauksesi
+button:
+  back: Edellinen
+  continue: Seuraava
+  complete: Valmis
+food:
+  tomato: Tomaatti
+  lettuce: Salaatti
+  cheese: Juusto
+  carrot: Porkkana
+  banana: Banaani
+  blueberry: Mustikka
+  drinks: Juomat
+blog:
+  title: Julkaisut
+  copy: Kopioi linkki
+  copied: Julkaisun linkki kopioitu leikepöydälle.
+  readtime: min luettavaa
+  read: Lue julkaisu
+  nopage: Sivua ei löytynyt
+  noposts: Julkaisua ei löytynyt
+  ogimg: Blog
+  badge: Teknologia
+  description: Nopea aloitus dAppien tekoon
+  text: Appilan pappilan apupapin papupata pankolla kiehuu ja kuohuu. Appilan pappilan piski, paksuposki, pakkas kapsäkin ja pinkaisi juoksuun. Appilan pappilan piski, paksuposki pisti apupapin papupadan poskeensa.
+  date: "11.06.2025"
+  categories: Aiheet
+  technology: Teknologia
+  business: Suhteet
+  finance: Rahat
+  health: Terveys
+  lifestyle: Elämäntapa
+  politics: Politikointi
+  science: Tiede
+  sports: Urheilu
+hero:
+  available: Saatavilla 
+  unavailable: Kiire
+  title: Teemme asioista vieläkin
+  better: parempia
+  modern: uudempia
+  beautiful: kauniimpia
+  awesome: hienompia
+  amazing: nopeampia
+  stunning: yllättävämpiä
+  wordfirst: Luodaan
+  wordsecond: kokemuksia
+  start: Aloitetaan
+  more: Lisää
+  badge: Muotoja
+  titlefirst: Nauti luomisesta
+  titlesecond: Oikeilla työkaluilla
+  description: Tutustu moniin helppokäyttöisiin ja muokattaviin apuvälineisiin.
+  components: Tutustu komponentteihin
+  viewcode: Kokeile koodia
+  picture: 
+    title: Kuva
+    description: Esimerkki
+resource: 
+  title: PDF
+  description: Historiikkia
+  options: 
+    title: Lataa
+    description: Luettavana ja jaettavana ilman nettiä
+  format: PDF-tiedosto
+  version: Printattava
+  time: "Lukuaika: 2 minuuttia"
+  share: Jaa tiedosto
+resume: 
+  title: CV
+  description: Ansioluettelon tapainen
+mason:
+  experience: Kokemukset
+  design: Mallit
+  event: Tapahtumat
+  data: Data
+  community: Yhteisö
+  learning: Oppiminen
+  adventures: Seikkailut
+dialog:
+  button: Klikkaa
+  title: Tervetuloa
+  description: Katsele ja kokeile
+  name: Nimi
+  username: Käyttäjätunnus
+  save: Valmis
+testi:
+  title: Mitä meistä kerrotaan
+  description: Kaikille kulkijoille
+home: Koti
+search: Hae
+mobile:
+  menu:
+    title: Mobiilivalikko
+    description: Lisää ominaisuuksia
+    content: Tulossa
+time:
+  h: t
+  min: min
+  weekshort: vk
+stats:
+  label: Kissa
+  location: Espanja
+  date: "Elokuu 2025"
+  members: Jäsentä
+  happy: Iloista käyttäjää
+  communities: Yhteisöä
+  details: Lisätietoa
+  events: Kaikki tapahtumat
+combo:
+  empty: Tyhjä
+  theme: Teema
+  write: Mitä mielessä liikkuu?
+  save: Tallenna
+  choose: Choose
+toc:
+  title: Sisällys
+show:
+  title: Esittelyssä
+  description: Valikoima mielenkiintoisia projekteja
+layouts:
+  title: Näkymä

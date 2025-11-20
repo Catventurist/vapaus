@@ -1,0 +1,967 @@
+pricing:
+  monthly: Monthly
+  yearly: Yearly
+  month: /month
+  year: /year
+error:
+  minlength: Too small. Expected string to have >=1 characters
+submit:
+  success:
+    title: Success
+    description: The form has been submitted (todo).
+task:
+  completed: Completed
+  category:
+    idea: Idea
+    bug: Bug
+    feature: Feature
+    documentation: Documentation
+header:
+  switchto: Switch to
+  language: Language
+  search: Search
+  theme: Theme
+  mode: Mode
+  login: Log In
+  signin: Sign in
+  user: User
+  close: Close
+  open: Open
+  logout: Log out
+  sidebar: Toggle Sidebar
+  docs: Docs
+  pricing: 
+    title: Pricing
+    description: Something for Everyone.
+  blog: Blog
+  changelog: 
+    title: Changelog
+    description: Improvements made along the way.
+  resources: Resources
+  help: Help Center
+  roadmap: Roadmap
+  features: Features
+  community: Community
+  about: About
+  hobbies: Hobbies
+  subscribed:
+    title: Subscription
+    description: Subscribe to our newsletter in the future.
+  subscribe: 
+    title: Subscribe
+    description: Subscribe to our newsletter.
+    enter: Enter your email
+  projects: 
+    title: Projects
+    description: Interesting sources of information.
+  faq: FAQ
+  introduction:
+    title: Introduction
+    description: Fully styled texts.
+  essentials: 
+    title: Essentials
+    description: Learn how to use components.
+  pages: Pages
+  events: 
+    title: Events
+    description: Categorized and timed material.
+  tasks: 
+    title: Tasks
+    description: Things to do.
+  animations: 
+    title: Animations
+    description: Tailwind & Motion.
+empty: 
+  page:
+    title: Page not found
+    description: Nothing here yet
+    error: We are sorry but this page could not be found.
+  authors: 
+    title: No Authors found
+    description: Nobody here yet
+  themes: No Themes found
+  blog: Blog not found
+  docs: Documentation not found
+  log: Logs not found
+  faq: Questions not found
+  tasks: Tasks not found
+  projects: Projects not found
+  events: Events not found
+  pricing: Prices not found
+events:
+  title: Create Your Event
+  description: Fill out the form below to create and customize your upcoming event
+  viewall: View all events
+  select: Select
+  selectdate: Select a date
+  listen: Listen
+  watch: Watch
+  choose: Choose
+  pick: Pick
+  upload: 
+    title: Upload
+    file: file
+    selected: selected
+  savedraft: Save as Draft
+  create: Create Event
+  conference:
+    title: Conference
+    description: Professional gathering with speakers and networking
+  workshop:
+    title: Workshop
+    description: Hands-on learning experience with practical activities
+  meetup:
+    title: Meetup
+    description: Casual gathering for like-minded individuals
+  webinar:
+    title: Webinar
+    description: Online presentation or seminar via video conference
+  form:
+    basic: Basic Information
+    title: Event Name
+    name: Organizer
+    description: Description
+    type: Event Type
+    venue: Venue
+    tags: Event Tags
+    images: Event Images
+links:
+  title: Community
+  edit: Edit this page
+  star: Star on GitHub
+  releases: Releases
+  copymd: Copy Markdown link
+  copyclip: Copied to clipboard
+  copypage: Copy page
+  viewmd: View as Markdown
+lists:
+  title: Nuxt
+  description: Great Framework for creating good code.
+  updated: Updated
+  suggested: Suggested Lists
+  future: Future Ideas
+  stack: My Stack
+  inspiration: Inspiration
+  create: Create List
+  give: Give a Star
+  detailsc: Personal Details
+  editc: Edit Information
+  phone: Phone Number
+  email: Email
+  website: Website
+  social: Social Platforms
+  address: Address
+graph:
+  activitiesy: activities in the last year
+  less: Less
+  more: More
+  contributions: contributions on
+notifications:
+  title: Notifications
+  description: You have 3 unread messages.
+  push: Push Notifications
+  send: Send notifications to device.
+  mark: Mark all as read
+  call: Your call has been confirmed.
+  message: You have a new message!
+  subscription: Your subscription is expiring soon!
+  hour: hour ago
+  hours: hours ago
+stream:
+  start: Start Streaming
+  restart: Restart
+login:
+  title: Login
+  description: Login to your account to continue
+  or: or
+  name:
+    title: Name
+    placeholder: Create username
+    invalid: Invalid username
+  email:
+    title: Email
+    placeholder: Enter your email
+    invalid: Invalid email
+  password:
+    title: Password
+    placeholder: Enter your password
+    invalid: Must be at least 8 characters
+  remember: Remember me
+  with:
+    google: Login with Google
+    github: Login with Github
+  submitted: Submitted
+  welcome:
+    title: Welcome back
+    description: Do not have an account?
+  signup: Sign up
+  forgot: Forgot password?
+  disclaimer: By signing in, you agree to the
+  terms: Terms of Service
+  message: 'Logged in as '
+signup:
+  title: Sign up
+  description: Create an account to get started
+  name:
+    title: Name
+    placeholder: Enter your name
+    required: Name is required
+  with:
+    google: Sign up with Google
+    github: Sign up with Github
+  create: 
+    title: Create account
+    description: Already have an account?
+  message: 'Feel welcome, '
+signin:
+  title: Sign in
+feedback:
+  veryhelpful: Very helpful
+  heplful: Helpful
+  nothelpful: Not helpful
+  confusing: Confusing
+  errorlenght: Please provide at least 10 characters or leave the field empty
+  thank:
+    title: Thank you for your feedback!
+    description: Your input helps us improve the documentation.
+  question: Was this helpful?
+  rateas: 'Rate as '
+  additional: Additional feedback (optional)
+  thoughts: Share your thoughts... (optional)
+  provide: Provide additional details about your experience with this page
+  issending: Sending feedback...
+  issend: Send feedback
+  sending: Sending...
+  send: Send
+  sendfeed: Sending your feedback...
+  expanded: Feedback form expanded. You can now add additional comments.
+  details: Details
+  percantage: Percentage
+  status: Status
+  lastw: Last 7 days
+steps:
+  prev: Prev
+  next: Next
+  problem: 
+    title: Problem
+    description: Thesis
+    content: Create a problem
+  reaction:
+    title: Reation
+    description: Antithesis
+    content: Make people triggered
+  solution:
+    title: Solution
+    description: Synthesis
+    content: Enforce the solution
+  start:
+    title: Project Kickoff
+    description: Gathering the tools and ideas
+  design:
+    title: Design Phase
+    description: Thinking how to make everything fit together
+  dev:
+    title: Development Sprint
+    description: Lots of writing code and solving errors
+  dep:
+    title: Testing & Deployment
+    description: Final touches and publishing to the public
+table:
+  date: Date
+  label: Label
+  description: Description
+  status: Status
+  error: Error
+  warning: Warning
+  translation: Translations
+  animation: Animations
+  route: Routes
+  locale: in English
+  asc: Asc
+  desc: Desc
+  filter: Filter labels...
+  copyid: Copy ID
+  copiedid: ID copied to clipboard!
+  edit: Edit
+  delete: Delete
+animation:
+  animations: Animations
+  read: Read Docs
+  explore: Explore components
+  motion:
+    title: Motion Animations
+    description: Advanced techniques
+  css:
+    title: CSS Animations
+    description: Tailwind & basic CSS techniques
+  textcss:
+    title: CSS Text Animations
+    description: Tailwind & basic CSS versions
+  textmotion:
+    title: Motion Text Animations
+    description: Motion-based
+  blur: 
+    title: Blur
+    description: Blurred text appears
+    text: Blurry
+  circular: 
+    title: Circural
+    description: Hover to speed up
+    text: 'Round and Round and '
+  shiny: 
+    title: Shiny
+    description: Shiny text
+    text: So Shiny
+  pressure: 
+    title: Pressure
+    description: Pressure text hover
+    text: Under Pressure
+  curved: 
+    title: Curved
+    description: Curved text with hover and drag
+    text: Curvy line goes through
+  gradient: 
+    title: Gradient
+    description: Changing text color
+    text: Pretty piece of text
+  decrypt: 
+    title: Decrypt
+    description: Changing coded letters
+    text: Decrypted text
+  rotate:
+    title: Rotating
+    description: Changing words
+    text: Rotation
+  dock:
+    title: Dock
+    description: Icons move and grow on hover
+  compare:
+    title: Compare
+    description: Changes between light and dark image
+  flip:
+    title: Flipping
+    description: Presenting different words
+  wordf: Writing
+  words: Learning
+  wordt: Speaking
+  worda: Listening
+  focus: 
+    title: Focusing
+    description: Pointing out words
+    text: Focus on important things
+  morph:
+    title: Morphing
+    description: Fluid transition of words
+  multi:
+    title: Multiple Directions
+    description: Appearing from sides
+  pull:
+    title: Pull Up
+    description: Appearing from bottom
+    text: Pullup
+  beam:
+    title: Border Beam
+    description: Color to borders
+    text: Beam up
+  stars:
+    title: Stars background
+    description: Animated movement
+  scratch:
+    title: Scratch ticket
+    description: Reveal by hovering
+  gallery: 
+    title: Gallery Roll
+    description: Scrollable and Swipeable images
+  dragtree: 
+    title: Draggable Tree Items
+    description: Move files around
+  fstars: 
+    title: Falling Stars Background
+    description: Animated lines
+  neonc: 
+    title: Neon Card
+    description: Shining border light
+  spotl: 
+    title: Spotlight Card
+    description: Hover spotlight
+  squaresbg: 
+    title: Background Squares
+    description: Moving boxes with hover
+  gcard: 
+    title: Git Card
+    description: Package information
+  ncard: 
+    title: Notifications Card
+    description: Choose Notifications
+  pan: 
+    title: Pan Image
+    description: Moves with cursor
+  magnet:
+    title: Magnet
+    description: Follows cursor
+  textshadow:
+    title: Text Shadows
+    description: Variations
+corner:
+  title: Corner Shapes
+  description: If supported
+  square:
+    title: Square
+    description: Nothing
+  round:
+    title: Round
+    description: Smooth
+  scoop:
+    title: Scoop
+    description: Round cutouts
+  bevel:
+    title: Bevel
+    description: Angled cutouts
+  notch:
+    title: Notch
+    description: Square cutouts
+  squircle:
+    title: Squircle
+    description: In between
+text:
+  neon:
+    title: NEON
+    description: Neon glow
+  fire:
+    title: FIRE
+    description: Flame
+  chromatic:
+    title: SPLIT
+    description: Chromatic
+  rainbow:
+    title: Rainbow
+    description: Colorful
+  glitch:
+    title: Glitch
+    description: Digital
+  holo:
+    title: HOLO
+    description: Holographic
+  blur:
+    title: Glow
+    description: Blur
+date:
+  today: Today
+  yesterday: Yesterday
+  lastwd: Last 7 days
+  lastmd: Last 30 days
+  thism: This month
+  lastm: Last month
+  thisq: This month
+  lastq: Last quarter
+  thisy: This year
+  lasty: Last year
+  invalidd: Invalid date
+profile:
+  joined: Joined
+  following: Following
+  followers: Followers
+  location: World
+  posts: Posts
+  replies: Replies
+  highlights: Highlights
+  media: Media
+  reactions: Reactions
+  username: Cat
+  usertag: cat
+  userbio: Catventures and Catography with some Coding
+  follownum: "0"
+  followernum: "0"
+nav:
+  site:
+    title: Vapaus
+    description: Coding and constant learning
+  pages:
+    title: Pages
+    blogs: 
+      title: Blogs
+    dev: 
+      title: Dev
+      description: Development notes
+    projects:
+      title: Projects
+      view: View Project
+      wp:
+        title: Wordpress blogs
+        description: Various sites on WP
+      ecency:
+        title: Ecency dApp
+        description: Decentralized social media
+      docs:
+        title: Shadcn Docs
+        description: Documentation built with Shadcn
+      movies:
+        title: Nuxt Movies
+        description: Movies in different languages
+    speaking: Speaking
+    icons:
+      title: Icons
+      description: A set of animated icons, balanced and quite consistent.
+    docs:
+      title: Read
+    learn:
+      title: Learn
+      styling:
+        title: Styling
+        description: "Tailwind 4, compatible with any styling solution."
+      animation:
+        title: Animation
+        description: Motion can do a lot outside CSS.
+      access:
+        title: Accessibility
+        description: Usable with keyboard, touching and scrolling.
+      typo:
+        title: Typography
+        description: Make text more readable and adjusted to personal preferences.
+    home: Home
+    appereance: Appereance
+    about: 
+      title: About
+      description: Information
+    skills:
+      title: Skills
+      description: Knowhow
+    faq:
+      title: FAQ
+      description: Frequently Asked Questions
+english: English
+finnish: Suomi
+theme: 
+  title: Theme
+  primary: Primary
+  tone: Tone
+  radius: Radius
+  black: Black
+  mode: Mode
+  dark: Dark
+  light: Light
+  system: System
+  slate: Slate
+  gray: Gray
+  zinc: Zinc
+  neutral: Neutral
+  stone: Stone
+  red: Red
+  orange: Orange
+  amber: Amber
+  yellow: Yellow
+  lime: Lime
+  green: Green
+  emerald: Emerald
+  teal: Teal
+  cyan: Cyan
+  sky: Sky
+  blue: Blue
+  indigo: Indigo
+  violet: Violet
+  purple: Purple
+  fuchsia: Fuchsia
+  pink: Pink
+  rose: Rose
+quotes:
+  title: Quotes
+  description: From wise people
+  fuller:
+    quote: You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete.
+    name: Buckminister Fuller
+    description: Designer
+  terence: 
+    quote: The imagination is the golden pathway to everywhere.
+    name: Terence McKenna
+    description: Author
+  stamets: 
+    quote: Chaga is one of the weirdest mushrooms you may ever see. A fungal parasite found on birch trees, Chaga is a hardened, blackened, crusty formation that looks like a bursting tumor.
+    name: Paul Stamets
+    description: Mycological Revolutionary
+  mate:
+    quote: When I am sharply judgmental of any other person, it is because I sense or see reflected in them some aspect of myself that I don not want to acknowledge.
+    name: Gabor Maté
+    description: Reseacher
+icons:
+  title: Icons
+  description: Animated with Motion
+  titleani: Icons with Motion
+  titledrag: Unanimated and Draggable
+about:
+  badge: About me
+  title: Constant learning and
+  highlight: Coding
+  description: On a mission to empower communities with cutting-edge tools, transforming how we operate and innovate. Experience the future of freedom today.
+  vision:
+    badge: Vision
+    description: Envisioning a world where tools are accessible to everyone, enabling unprecedented levels of creativity, efficiency and problem-solving.
+  mission:
+    badge: Mission
+    description: Maximizing freedom and flow of information.
+  approach: 
+    badge: Approach
+    title: Transforming ideas into reality
+    description: The goal is to grow. Making it happen!
+  cta: 
+    badge: Creativity
+    title: Making something unexpected
+    description: The goal is to grow and make something amazing.
+    first: View possibilities
+    second: Learn about culture
+    overlay:
+      title: Become the best version
+      description: So many possibilities
+  read:
+    title: Reading
+    description: So much information to go thorugh
+    more: Read more
+  learn:
+    title: Learning
+    description: Processing information and following leads
+    more: Learn more
+  know:
+    title: Knowing
+    description: Using the thinking process to come in to conclusions
+    more: Know more
+  stats:
+    ideas: Ideas thought
+    countries: Places visited
+    comments: Positive comments
+    available: Available virtually
+values:
+  title: Core Values
+  description: Making things which matter.
+  innovation:
+    title: Innovation
+    description: We continuously challenge assumptions and explore new possibilities.
+  integrity:
+    title: Integrity
+    description: We operate with honesty, transparency, and ethical responsibility.
+  collaboration:
+    title: Collaboration
+    description: We bring different perspectives together to achieve extraordinary results.
+  excellence:
+    title: Excellence
+    description: We strive for outstanding quality in everything we create.
+  adaptability:
+    title: Adaptability
+    description: We embrace change and evolve to meet new challenges.
+  empathy:
+    title: Empathy
+    description: We design with an understanding of human needs and experiences.
+  purpose:
+    title: Purpose
+    description: We focus on creating meaningful impact that matters.
+  transparency:
+    title: Transparency
+    description: We communicate openly and honestly with everyone.
+  sustainability:
+    title: Sustainability
+    description: We consider long-term environmental and social impact in our work.
+skills:
+  frontend: Frontend
+  backend: Backend
+  toolscat: Tools
+  mobile: Mobile
+  expert: Expert
+  advanced: Advanced
+  proficient: Proficient
+  intermediate: Intermediate
+  badge: My Toolkit
+  title: Skills & Technologies
+  description: A simple overview of some technical skills, proficiency levels, and the tools I use to create new visual experiences.
+  technical: Technical Skills
+  tools: Tools & Technologies
+  prof: Skill Proficiency Levels
+  blockchain: Blockchain
+  cloud: Cloud
+  browser: Browser
+video : 
+  title: Video
+  description: From travelling times.
+  badge: Watch
+  location: A nice Spanish park
+  feeling: Feeling Free
+  sound: Sound of nature
+  hive: On Hive
+  youtube: In Youtube
+contact: 
+  title: Communication is the key
+  description: Choose a department and fill your information.
+  headline: Contact us
+  selectdep: Select Department
+  responsetime: Typical response time
+  hours: ' hours'
+  firstname: First Name
+  lastname: Last Name
+  email: Email
+  subject: Subject
+  subjectdesc: Brief description
+  message: Message
+  messagedesc: Tell us more...
+  urgent: This is a very urgent matter
+  sendto: Send to
+  sales: Sales
+  support: Support
+  billing: Billing
+  technical: Technical
+  general: General
+  platforms: Platforms
+  knowledge: 
+    title: Knowledgebase
+    description: Lot of information to learn
+    link: Think thoughts
+  faq: 
+    title: FAQ
+    description: Look for answers to basic questions
+    link: Read texts
+  developer:
+    title: Developer Corner
+    description: Stuff for coding enthusiasts
+    link: Technical things
+faq:
+  title: FAQ
+  description: Look for answers to basic questions
+  what:
+    title: What do you do?
+    description: Coding, drinking coffee.
+  which: 
+    title: Which interests?
+    description: Learning, writing, walking.
+  who: 
+    title: Who do you look up to?
+    description: Terence Mckenna, Paul Stamets.
+  where:
+    title: Where are you now?
+    description: Southern Spain.
+  from: 
+    title: Where are you from?
+    description: Northern Finland.
+  to: 
+    title: Where are you going?
+    description: Nobody knows.
+  how: 
+    title: How do you do?
+    description: Feeling inspired and a bit hungry.
+  why: 
+    title: What are your motives?
+    description: Maximizing freedom in all areas.
+  kind:
+    title: What kind of a person?
+    description: Like a cat, friendly but mostly alone.
+  many:
+    title: How many kids?
+    description: "1."
+  when: 
+    title: When it gets better?
+    description: Soon, hopefully.
+  roadmap: 
+    title: Roadmap
+    description: Plans for the app project.
+carousel:
+  title: Carousel
+  description: Images
+  creativity: 
+    slogan: Creativity is a human trait
+    description: You can do more with your brains.
+    spirituality: Spirituality
+    consciousness: Consciousness
+    enlightenment: Enlightenment
+    title: Creativity
+    chakra: Crown
+  intuition: 
+    slogan: Following it leads to nice things.
+    description: Learning oneself is the hardest.
+    wisdom: Wisdom
+    insight: Insight
+    clarity: Clarity
+    title: Intuition
+    chakra: 3rd Eye
+  communication: 
+    slogan: Speak and express yourself
+    description: Being heard is a nice feeling.
+    selfexpress: "Self-expression"
+    truth: Truth
+    title: Communication
+    chakra: Throat
+  empathy: 
+    slogan: Biggest feelings
+    description: Are the most difficult to handle
+    love: Love
+    compassion: Compassion
+    relationships: Relationships
+    title: Empathy
+    chakra: Heart
+  decisions: 
+    slogan: Arriving to solutions
+    description: Doing what is right.
+    personalpower: Personal power
+    confidence: Confidence
+    title: Decisions
+    chakra: Solar Plexus
+  connection: 
+    slogan: Making something for others
+    description: Making life an adventure.
+    sexuality: Sexuality
+    emotions: Emotions
+    title:  Connection
+    chakra: Sacral  
+  stability: 
+    slogan: Basic needs
+    description: Making them met
+    grounding: Grounding
+    security: Security
+    title: Stability
+    chakra: Root
+order:
+  address:
+    title: Address
+    description: Add your address here
+  shipping:
+    title: Shipping
+    description: Set your preferred shipping method
+  checkout:
+    title: Checkout
+    description: Confirm your order
+button:
+  back: Back
+  continue: Continue
+  complete: Complete
+features: Features
+greeting:
+  title: Hey there
+  description: How is it going?
+social:
+  badge: Social
+  title: Recent
+  description: Stay updated with latest thoughts and interactions in the communities.
+  more: View all posts
+prose:
+  cssvariable: CSS Variable
+  description: Description
+  dataattr: Data Attribute
+  value: Value
+  key: Key
+pluraltime: s
+words: Some writing with little significance
+hello: Hello World!
+mode: Enjoy
+explore: Explore
+site:
+  title: HiveCoding
+  description: Web platform for freedom
+  offer: Launch begins
+food:
+  tomato: Tomato
+  lettuce: Lettuce
+  cheese: Cheese
+  carrot: Carrot
+  banana: Banana
+  blueberry: Blueberries
+  drinks: Drinks
+blog:
+  title: Posts
+  copy: Copy link
+  copied: Article link copied to clipboard
+  readtime: min read
+  read: Read Article
+  nopage: Page not found
+  noposts: Blog posts not found
+  ogimg: Blog
+  badge: Technology
+  description: A beginners guide to blackchain for engineers
+  text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa consequatur minus dicta accusantium quos, ratione suscipit id adipisci voluptatibus. Nulla sint repudiandae fugiat tenetur dolores.
+  date: "Jul 11 2025"
+  categories: Categories
+  technology: Technology
+  business: Business
+  finance: Finance
+  health: Health
+  lifestyle: Lifestyle
+  politics: Politics
+  science: Science
+  sports: Sports
+hero:
+  available: Available for new projects
+  unavailable: Not available at the moment
+  title: More advanced animations
+  better: Better
+  beautiful: Beautiful
+  awesome: Awesome
+  amazing: Amazing
+  stunning: Stunning
+  wordfirst: Creating more
+  wordsecond: experiences
+  start: Get Started
+  more: Learn More
+  badge: Shapes
+  titlefirst: Enjoy creating with
+  titlesecond: The right tools
+  description: Get to know all the accessible and customizable components.
+  components: View Components
+  viewcode: View code
+  picture: 
+    title: Picture
+    description: A simple image
+resource: 
+  title: PDF
+  description: The past in a nutshell
+  options: 
+    title: Download Options
+    description: Get it for offline reading or sharing.
+  format: PDF Format
+  version: Print Version
+  time: "Read time: 5 minutes"
+  share: Share this guide
+resume: 
+  title: CV
+  description: Resume
+mason:
+  experience: Experience
+  design: Design
+  event: Event
+  data: Data
+  community: Community
+  learning: Learning
+  adventures: Adventures
+dialog:
+  button: Click
+  title: Welcome
+  description: Enjoy exploring
+  name: Name
+  username: Username
+  save: Save
+testi:
+  title: What people say about us
+  description: Open for everyone
+mobile:
+  menu:
+    title: Modal sheet
+    description: Built with Reka UI and Motion-v.
+    content: TBA
+time:
+  h: h
+  min: min
+  weekshort: Wk
+stats:
+  label: Cat on a tree
+  location: Spain
+  date: "July 2025"
+  members: Members
+  happy: Happy users
+  communities: Communities
+  details: Event details
+  events: View all events
+combo:
+  empty: Empty
+  theme: Theme
+  write: What is on your mind?
+  save: Save
+  choose: Choose
+toc:
+  title: On the Page
+show:
+  title: Showcase
+  description: Selection of interesting projects
+layouts:
+  title: Layout

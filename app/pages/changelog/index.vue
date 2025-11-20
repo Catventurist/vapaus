@@ -1,11 +1,30 @@
 <script setup lang="ts">
-const route = useRoute()
+import { withLeadingSlash } from 'ufo'
+import type { PageCollections } from '@nuxt/content'
 
-const { data: page } = await useAsyncData('changelog', () => queryCollection('changelog').first())
-const { data: versions } = await useAsyncData(route.path, () => queryCollection('versions').order('date', 'DESC').all())
+const route = useRoute()
+const { locale } = useI18n()
+const slug = computed(() => withLeadingSlash(String(route.params.slug)))
+
+const { data: page } = await useAsyncData('changelog-' + slug.value, () => queryCollection(('changelog_' + locale.value) as keyof PageCollections).first(), {
+  watch: [locale]
+})
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: $t('empty.log'), fatal: true })
+}
+const { data: versions } = await useAsyncData(route.path, () => queryCollection(('versions_' + locale.value) as keyof PageCollections).order('path', 'ASC').all(), {
+  watch: [locale]
+})
 
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
+
+defineI18nRoute({
+  paths: {
+    en: '/changelog',
+    fi: '/muutoslista'
+  }
+})
 
 useSeoMeta({
   title,

@@ -1,8 +1,31 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('pricing', () => queryCollection('pricing').first())
+import { withLeadingSlash } from 'ufo'
+import type { Collections } from '@nuxt/content'
 
+const route = useRoute()
+const { locale } = useI18n()
+const slug = computed(() => withLeadingSlash(String(route.params.slug)))
+
+const { data: page } = await useAsyncData('pricing-' + slug.value, () => queryCollection('pricing_' + locale.value as keyof Collections).first(), {
+  watch: [locale]
+})
+
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: $t('empty.pricing'),
+    fatal: true
+  })
+}
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
+
+defineI18nRoute({
+  paths: {
+    en: '/pricing',
+    fi: '/hintoja'
+  }
+})
 
 useSeoMeta({
   title,
@@ -17,11 +40,11 @@ const isYearly = ref('0')
 
 const items = ref([
   {
-    label: 'Monthly',
+    label: $t('pricing.monthly'),
     value: '0'
   },
   {
-    label: 'Yearly',
+    label: $t('pricing.yearly'),
     value: '1'
   }
 ])

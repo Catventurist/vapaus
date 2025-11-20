@@ -1,0 +1,130 @@
+title: 'Nauti [Vapaudesta]{.text-primary} [Täysillä]{.text-info}'
+description: Ajatuksia ja ideoita vapaana elämisestä.
+seo:
+  title: Vapaus
+  description: Ajatuksia ja ideoita vapaana elämisestä.
+navigation: false
+hero:
+  links:
+    - label: Tutustu lukemalla
+      icon: i-lucide-arrow-right
+      trailing: true
+      to: /fi/docs/getting-started/installation
+      size: xl
+      variant: outline
+    - label: Githubissa
+      icon: i-simple-icons-github
+      size: xl
+      color: neutral
+      variant: subtle
+      to: https://github.com/catventurist/vapaus
+      target: _blank
+sections:
+  - title: Tunteella työstetty
+    description: Asioiden toiminnan ymmärtämisen myötä uuden luomista. Toimiva pohja uusimmilla koodinpätkillä. 
+    id: features
+    orientation: horizontal
+    features:
+      - name: FOSS
+        description: Avoin lähdekoodi on oiva tapa yhdistellä uutta ja vanhaa.
+        icon: i-lucide-package
+      - name: Dokumentaatio
+        description: Ohjeita kuinka käyttää alustaa ja vinkkejä elon polulle.
+        icon: i-lucide-shield
+      - name: Hajauttaminen
+        description: Tiedon tallennus sensuurivapaisiin tietokantoihin ja toimintaa ilman välikäsiä.
+        icon: i-lucide-code-2
+  - title: Luotettava teknologia
+    description: Vuosia hyvin toimineita ratkaisuja yhdistettynä uusimpiin kehitysaskeliin.
+    orientation: horizontal
+    reverse: true
+    features:
+      - name: Kaikille jotain
+        description: Yksinkertaisista nettisivuista hajautettuihin sovelluksiin, valtava potentiaali.
+        icon: i-lucide-zap
+      - name: Suorat yhteydet
+        description: Henkilöiden välinen kommunikaatio ja sopimukset teknologian avustamana.
+        icon: i-lucide-moon
+      - name: Kansainvälinen ja paikallinen
+        description: Paikasta riippumaton netti toimii myös paikallisyhteisöissä.
+        icon: i-lucide-globe
+features:
+  title: Järjestelmän ulkopuolella
+  description: Ripaus onnea, paljon tietoa ja kohtuulliset viestintätaidot.
+  items:
+    - title: Kaunis maailma
+      description: Maisemat, eläimet, kasvit ja muut on vaikeaa kokea vituaalisesti.
+      icon: i-lucide-palette
+    - title: Suuri tunne
+      description: Moraalin mukaan ja kehon rajotteiden puitteissa eläminen johtaa jännään fiilikseen.
+      icon: i-lucide-accessibility
+    - title: Erikoiset kokemukset
+      description: Vailla määränpäätä elämään luottaen, seikkailut suo tarinoita kiikkustuolissa kerrottavaksi.
+      icon: i-lucide-terminal
+    - title: Tunneäly
+      description: Koodin loogisuuden vastapainona on hyvä olla myös ihmissuhteita pääkopan tasapainon säilyttämiseksi.
+      icon: i-lucide-search
+    - title: Aina valmis
+      description: Uuden mielenkiinnon kohteen toiminnan opettelu ja kehittäminen omiin tarpeisiin.
+      icon: i-lucide-check-circle
+    - title: Keinotekoinen niukkuus
+      description: Hintalapulla huijataan, jotta arvon käsite unohtuisi.
+      icon: i-lucide-settings
+testimonials:
+  headline: Lainauksia
+  title: Sopiiko ajatusmaailmat yhteen?
+  description: Keskivertoa fiksumpia lauseita elämän ohjenuoriksi.
+  items:
+    - quote: Asiat eivät muutu tosiasioita vastustamalla. Muuttaakseen jotain täytyy luoda malli, joka tekee nykyisen tarpeettomaksi.
+      user:
+        name: Buckminister Fuller
+        description: Suunnittelija
+        avatar:
+          src: /cat.png
+    - quote: Mielikuvitus on kultainen polku kaikkialle.
+      user:
+        name: Terence McKenna
+        description: Kirjailija
+        avatar:
+          src: /cat.png
+    - quote: Pakuri on oudoimpia sieniä maailmassa. Koivuissa kasvava sieniparasiitti on kovakuorinen ja väriltään musta muodostelma, joka näyttää räjähtävältä kasvaimelta.
+      user:
+        name: Paul Stamets
+        description: Mykologian mestari
+        avatar:
+          src: /cat.png
+    - quote: Kun tuomitaan toisia jyrkästi, se johtuu siitä että tunnetaan tai nähdään toisessa jokin ominaisuus, jota ei haluta tunnistaa itsessään.
+      user:
+        name: Gabor Maté
+        description: Tutkija
+        avatar:
+          src: /cat.png
+    - quote: He eivät voi tehdä toimivia tulevaisuuden suunnitelmia, joilla ei ole kykyä elää hetkessä.
+      user:
+        name: Alan Watts
+        description: Ajattelija
+        avatar:
+          src: /cat.png
+    - quote: Totuutta ei voi antaa toiselle. Se pitää löytää itse ja vaaditaan mielentila, jossa on suora havainnointi.
+      user:
+        name: Jiddu Krishnamurti
+        description: Puhuja
+        avatar:
+          src: /cat.png
+cta:
+  title: Valmis vapauteen?
+  description: Kopioi ja kehitä, itseä ja sisältöjä.
+  links:
+    - label: Asennus
+      to: '/fi/docs/getting-started/installation'
+      trailingIcon: i-lucide-book-open
+      variant: soft
+    - label: Kopioi GitHubista
+      to: 'https://github.com/catventurist/vapaus'
+      target: _blank
+      variant: subtle
+      icon: i-simple-icons-github
+    - label: Apua
+      to: '/fi/ukk'
+      leadingIcon: i-lucide-list-check
+      variant: outline

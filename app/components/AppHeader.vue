@@ -1,42 +1,78 @@
 <script setup lang="ts">
 const route = useRoute()
+const localePath = useLocalePath()
 
 const items = computed(() => [{
-  label: 'Docs',
-  icon: 'lucide-book',
-  to: '/docs',
-  active: route.path.startsWith('/docs')
+  label: $t('header.docs'),
+  to: localePath('/docs'),
+  icon: 'lucide-book-a',
+  active: route.path.startsWith(localePath('/docs')),
+  children: [
+    {
+      label: $t('header.introduction.title'),
+      description: $t('header.introduction.description'),
+      icon: 'i-lucide-book',
+      to: localePath('/docs/getting-started')
+    },
+    {
+      label: $t('header.essentials.title'),
+      description: $t('header.essentials.description'),
+      icon: 'i-lucide-wrench',
+      to: localePath('/docs/essentials')
+    }
+  ]
 }, {
-  label: 'Pricing',
-  icon: 'lucide-bitcoin',
-  to: '/pricing'
+  label: $t('header.pages'),
+  icon: 'lucide-notebook',
+  children: [
+    {
+      label: $t('header.changelog.title'),
+      description: $t('header.changelog.description'),
+      to: localePath('/changelog'),
+      icon: 'lucide-logs'
+    }, {
+      label: $t('header.pricing.title'),
+      description: $t('header.pricing.description'),
+      to: localePath('/pricing'),
+      icon: 'lucide-bitcoin'
+    }, {
+      label: $t('header.projects.title'),
+      description: $t('header.projects.description'),
+      to: localePath('/projects'),
+      icon: 'lucide-anvil'
+    }
+  ]
 }, {
-  label: 'Blog',
-  icon: 'lucide-newspaper',
-  to: '/blog'
+  label: $t('header.blog'),
+  to: localePath('/blog'),
+  icon: 'lucide-book-open',
+  active: route.path.startsWith(localePath('/blog'))
 }, {
-  label: 'Changelog',
-  icon: 'lucide-list-check',
-  to: '/changelog'
+  label: $t('header.faq'),
+  to: localePath('/faq'),
+  icon: 'lucide-message-circle-question-mark',
+  active: route.path.startsWith(localePath('/faq'))
 }])
 </script>
 
 <template>
   <UHeader>
     <template #left>
-      <NuxtLink to="/" class="flex flex-row gap-2 items-center rounded-xl duration-300 hover:scale-110 focus:scale-90">
+      <NuxtLink :to="localePath('/')" class="flex flex-row gap-2 items-center rounded-xl duration-300 hover:scale-110 focus:scale-90">
         <UColorModeImage
           light="/logo-light.webp" dark="/logo-dark.webp" :width="24" :height="24"
           class="w-auto h-6 shrink-0" />
         <p class="text-xl text-primary font-bold">
-          Vapaus
+          {{ $t('nav.site.title') }}
         </p>
       </NuxtLink>
     </template>
     <UNavigationMenu :items="items" variant="link" />
 
     <template #right>
-      <UColorModeButton />
+      <LangSwitcher />
+      <ThemePicker />
+      <ColorModeButton />
     <!--       <UButton icon="i-lucide-log-in" color="neutral" variant="ghost" to="/login" class="lg:hidden" />
       <UButton label="Sign in" color="neutral" variant="outline" to="/login" class="hidden lg:inline-flex" />
       <UButton

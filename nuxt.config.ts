@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     '@vueuse/nuxt',
-    'nuxt-og-image'
+    'nuxt-og-image',
+    '@nuxtjs/i18n'
   ],
 
   devtools: {
@@ -16,6 +17,10 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/docs': { redirect: '/docs/getting-started', prerender: false }
+  },
+
+  experimental: {
+    scanPageMeta: true
   },
 
   compatibilityDate: '2024-07-11',
@@ -37,6 +42,33 @@ export default defineNuxtConfig({
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+
+  i18n: {
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', name: 'English', file: 'en.yml', icon: 'cat:usa', dir: 'ltr', currency: 'USD' },
+      { code: 'fi', name: 'Suomi', file: 'fi.yml', icon: 'cat:finland', dir: 'ltr', currency: 'EUR' }
+    ],
+    skipSettingLocaleOnNavigate: true,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      alwaysRedirect: true
+    }
+  },
+
+  icon: {
+    customCollections: [{
+      prefix: 'cat',
+      dir: './app/assets/icons'
+    }],
+    clientBundle: {
+      scan: true,
+      includeCustomCollections: true
     }
   }
 })
