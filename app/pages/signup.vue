@@ -6,78 +6,86 @@ definePageMeta({
   layout: 'auth'
 })
 
-useSeoMeta({
-  title: 'Sign up',
-  description: 'Create an account to get started'
+defineI18nRoute({
+  paths: {
+    en: '/signup',
+    fi: '/liity'
+  }
 })
 
+useSeoMeta({
+  title: $t('signup.title'),
+  description: $t('signup.description')
+})
+
+const localePath = useLocalePath()
 const toast = useToast()
 
 const fields = [{
   name: 'name',
   type: 'text' as const,
-  label: 'Name',
-  placeholder: 'Enter your name'
+  label: $t('login.name.title'),
+  placeholder: $t('login.name.placeholder'),
+  required: true
 }, {
   name: 'email',
   type: 'text' as const,
-  label: 'Email',
-  placeholder: 'Enter your email'
+  label: $t('login.email.title'),
+  placeholder: $t('login.email.placeholder'),
+  required: false
 }, {
   name: 'password',
-  label: 'Password',
   type: 'password' as const,
-  placeholder: 'Enter your password'
+  label: $t('login.password.title'),
+  placeholder: $t('login.password.placeholder'),
+  required: true
 }]
 
 const providers = [{
   label: 'Google',
   icon: 'i-simple-icons-google',
   onClick: () => {
-    toast.add({ title: 'Google', description: 'Login with Google' })
+    toast.add({ title: 'Google', description: $t('signup.with.google') })
   }
 }, {
   label: 'GitHub',
   icon: 'i-simple-icons-github',
   onClick: () => {
-    toast.add({ title: 'GitHub', description: 'Login with GitHub' })
+    toast.add({ title: 'GitHub', description: $t('signup.with.google') })
   }
 }]
 
 const schema = z.object({
-  name: z.string().min(1, 'Name is required'),
-  email: z.email('Invalid email'),
-  password: z.string().min(8, 'Must be at least 8 characters')
+  name: z.string().min(1, { error: $t('login.name.invalid') }),
+  email: z.email({ error: $t('login.email.invalid') }).optional(),
+  password: z.string().min(8, { error: $t('login.password.invalid') })
 })
 
 type Schema = z.output<typeof schema>
 
 function onSubmit(payload: FormSubmitEvent<Schema>) {
-  console.log('Submitted', payload)
+  toast.add({ title: $t('signup.message') + payload.data.name })
 }
 </script>
 
 <template>
-  <UAuthForm
-    :fields="fields"
-    :schema="schema"
-    :providers="providers"
-    title="Create an account"
-    :submit="{ label: 'Create account' }"
-    @submit="onSubmit"
-  >
-    <template #description>
-      Already have an account? <ULink
-        to="/login"
-        class="text-primary font-medium"
-      >Login</ULink>.
-    </template>
+  <div>
+    <UAuthForm
+      :fields="fields" :schema="schema" :providers="providers" :title="$t('signup.create.title')"
+      :submit="{ label: $t('signup.create.title') }" :separator="$t('login.or')" @submit="onSubmit">
+      <template #description>
+        {{ $t('signup.create.description') }}
+        <ULink :to="localePath('/login')" class="text-primary font-medium">
+          {{ $t('login.title') }}
+        </ULink>.
+      </template>
 
-    <template #footer>
-      By signing up, you agree to our <ULink
-        to="/"
-        class="text-primary font-medium"
-      >Terms of Service</ULink>.
-    </template>
-  </UAuthForm>
+      <template #footer>
+        {{ $t('login.disclaimer') }}
+        <ULink :to="localePath('/')" class="text-primary font-medium">
+          {{ $t('login.terms') }}
+        </ULink>.
+      </template>
+    </UAuthForm>
+  </div>
 </template>

@@ -6,27 +6,42 @@ definePageMeta({
   layout: 'auth'
 })
 
-useSeoMeta({
-  title: 'Login',
-  description: 'Login to your account to continue'
+defineI18nRoute({
+  paths: {
+    en: '/login',
+    fi: '/kirjaudu'
+  }
 })
 
+useSeoMeta({
+  title: $t('login.title'),
+  description: $t('login.description')
+})
+
+const localePath = useLocalePath()
 const toast = useToast()
 
 const fields = [{
-  name: 'email',
+  name: 'name',
+  label: $t('login.name.title'),
+  placeholder: $t('login.name.placeholder'),
   type: 'text' as const,
-  label: 'Email',
-  placeholder: 'Enter your email',
   required: true
 }, {
+  name: 'email',
+  label: $t('login.email.title'),
+  placeholder: $t('login.email.placeholder'),
+  type: 'text' as const,
+  required: false
+}, {
   name: 'password',
-  label: 'Password',
+  label: $t('login.password.title'),
+  placeholder: $t('login.email.placeholder'),
   type: 'password' as const,
-  placeholder: 'Enter your password'
+  required: true
 }, {
   name: 'remember',
-  label: 'Remember me',
+  label: $t('login.remember'),
   type: 'checkbox' as const
 }]
 
@@ -34,57 +49,53 @@ const providers = [{
   label: 'Google',
   icon: 'i-simple-icons-google',
   onClick: () => {
-    toast.add({ title: 'Google', description: 'Login with Google' })
+    toast.add({ title: 'Google', description: $t('login.with.google') })
   }
 }, {
   label: 'GitHub',
   icon: 'i-simple-icons-github',
   onClick: () => {
-    toast.add({ title: 'GitHub', description: 'Login with GitHub' })
+    toast.add({ title: 'GitHub', description: $t('login.with.github') })
   }
 }]
 
 const schema = z.object({
-  email: z.email('Invalid email'),
-  password: z.string().min(8, 'Must be at least 8 characters')
+  name: z.string().min(1, { error: $t('login.name.invalid') }),
+  email: z.email({ error: $t('login.email.invalid') }).optional(),
+  password: z.string().min(8, { error: $t('login.password.invalid') })
 })
 
 type Schema = z.output<typeof schema>
 
 function onSubmit(payload: FormSubmitEvent<Schema>) {
-  console.log('Submitted', payload)
+  toast.add({ title: $t('login.message') + payload.data.name })
 }
 </script>
 
 <template>
-  <UAuthForm
-    :fields="fields"
-    :schema="schema"
-    :providers="providers"
-    title="Welcome back"
-    icon="i-lucide-lock"
-    @submit="onSubmit"
-  >
-    <template #description>
-      Don't have an account? <ULink
-        to="/signup"
-        class="text-primary font-medium"
-      >Sign up</ULink>.
-    </template>
+  <div>
+    <UAuthForm
+      :fields="fields" :schema="schema" :providers="providers" :title="$t('login.welcome.title')"
+      :separator="$t('login.or')" icon="i-lucide-lock" @submit="onSubmit">
+      <template #description>
+        {{ $t('login.welcome.description') }}
+        <ULink :to="localePath('/signup')" class="text-primary font-medium">
+          {{ $t('login.signup') }}
+        </ULink>.
+      </template>
 
-    <template #password-hint>
-      <ULink
-        to="/"
-        class="text-primary font-medium"
-        tabindex="-1"
-      >Forgot password?</ULink>
-    </template>
+      <template #password-hint>
+        <ULink :to="localePath('/')" class="text-primary font-medium" tabindex="-1">
+          {{ $t('login.forgot') }}
+        </ULink>
+      </template>
 
-    <template #footer>
-      By signing in, you agree to our <ULink
-        to="/"
-        class="text-primary font-medium"
-      >Terms of Service</ULink>.
-    </template>
-  </UAuthForm>
+      <template #footer>
+        {{ $t('login.disclaimer') }}
+        <ULink :to="localePath('/')" class="text-primary font-medium">
+          {{ $t('login.terms') }}
+        </ULink>.
+      </template>
+    </UAuthForm>
+  </div>
 </template>

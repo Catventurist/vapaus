@@ -18,7 +18,7 @@ if (!page.value) {
   throw createError({ statusCode: 404, message: $t('empty.docs'), fatal: true })
 }
 
-const { data: surround } = await useAsyncData(`${route.path}-surround-` + slug.value, () => {
+const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
   return queryCollectionItemSurroundings('docs_' + locale.value as keyof PageCollections, route.path, {
     fields: ['description']
   })
@@ -63,7 +63,6 @@ const tocLinks = ref<PageLink[]>([
       <USeparator v-if="surround?.length" class="h-1 bg-radial from-primary/40 to-transparent" />
       <UContentSurround :surround="surround" />
     </UPageBody>
-
     <template v-if="page?.body?.toc?.links?.length" #right>
       <UContentToc :links="page.body.toc.links" highlight>
         <template #bottom>

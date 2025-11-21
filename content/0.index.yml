@@ -117,12 +117,12 @@ cta:
   description: Copy the whole thing or join in the development.
   links:
     - label: Start Learning
-      to: '/docs/getting-started/installation'
+      to: /docs/getting-started/installation
       target: _blank
       trailingIcon: i-lucide-arrow-right
       variant: soft
     - label: View on GitHub
-      to: 'https://github.com/catventurist'
+      to: https://github.com/catventurist/vapaus
       target: _blank
       variant: subtle
       icon: i-simple-icons-github
