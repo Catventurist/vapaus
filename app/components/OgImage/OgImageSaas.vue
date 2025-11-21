@@ -16,12 +16,12 @@ defineProps({
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-col justify-center text-center bg-slate-900 p-8">
+  <div class="size-full flex flex-col justify-center text-center bg-muted/80 p-8">
     <div class="relative">
-      <h1 class="text-8xl mb-4 text-white">
+      <h1 class="text-8xl mb-4 text-default">
         {{ title }}
       </h1>
-      <p class="text-5xl text-gray-200 leading-tight">
+      <p class="text-5xl text-muted leading-tight">
         {{ description }}
       </p>
     </div>

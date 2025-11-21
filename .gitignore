@@ -18,6 +18,7 @@ logs
 .fleet
 .idea
 bun.lock
+app/components/old
 
 # Local env files
 .env
