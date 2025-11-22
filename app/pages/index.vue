@@ -65,7 +65,7 @@ useSeoMeta({
           :description="testimonial.quote"
           :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }">
           <template #footer>
-            <UUser v-bind="testimonial.user" size="lg" />
+            <LazyUUser v-bind="testimonial.user" size="lg" />
           </template>
         </UPageCard>
       </UPageColumns>

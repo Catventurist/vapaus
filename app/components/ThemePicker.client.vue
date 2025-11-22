@@ -43,7 +43,7 @@ const neutral = computed({
 })
 
 /* const colorsToOmit = ['inherit', 'current', 'transparent', 'black', 'white', ...neutralColors]
-const primaryColors = Object.keys(omit(colors, colorsToOmit as any)) */
+ const primaryColors = Object.keys(omit(colors, colorsToOmit as any)) */
 const primary = computed({
   get() {
     return appConfig.ui.colors.primary
@@ -111,7 +111,7 @@ function setBlackAsPrimary(value: boolean) {
             @click="setBlackAsPrimary(true)"
           >
             <template #leading>
-              <span class="inline-block w-2 h-2 rounded-full bg-black dark:bg-white" />
+              <span class="inline-block size-2 rounded-full bg-black dark:bg-white" />
             </template>
           </ThemePickerButton>
           <ThemePickerButton

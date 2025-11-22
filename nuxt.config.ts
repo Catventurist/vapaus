@@ -15,6 +15,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  ui: {
+    experimental: {
+      componentDetection: true
+    }
+  },
+
   routeRules: {
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
@@ -43,6 +49,15 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  fonts: {
+    families: [
+      { name: 'Finlandica', provider: 'bunny' },
+      { name: 'Arima Madurai', provider: 'bunny' },
+      { name: 'Chivo Mono', provider: 'bunny' },
+      { name: 'Caveat', provider: 'bunny' }
+    ]
   },
 
   i18n: {

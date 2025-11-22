@@ -60,9 +60,9 @@ const items = computed(() => [{
     <template #left>
       <NuxtLink :to="localePath('/')" class="flex flex-row gap-2 items-center rounded-xl duration-300 hover:scale-110 focus:scale-90">
         <UColorModeImage
-          light="/logo-light.webp" dark="/logo-dark.webp" :width="24" :height="24"
+          light="/logo-light.webp" dark="/logo-dark.webp" :width="24" :height="24" alt="Logo"
           class="w-auto h-6 shrink-0" />
-        <p class="text-xl text-primary font-bold">
+        <p class="text-xl text-primary">
           {{ $t('nav.site.title') }}
         </p>
       </NuxtLink>
@@ -71,6 +71,7 @@ const items = computed(() => [{
 
     <template #right>
       <LangSwitcher />
+      <UContentSearchButton />
       <ThemePicker />
       <ColorModeButton />
     <!--       <UButton icon="i-lucide-log-in" color="neutral" variant="ghost" to="/login" class="lg:hidden" />

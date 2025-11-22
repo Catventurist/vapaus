@@ -30,7 +30,7 @@ const ui = {
     :ui="{ description: 'mt-2 text-muted' }">
     <UTabs :items orientation="horizontal" :ui>
       <template #content="{ item }">
-        <Motion :initial="{ opacity: 0, y: 10 }" :animate="{ opacity: 1, y: 0, transition: { delay: 0.3 } }">
+        <Motion :initial="{ opacity: 0, y: 10 }" :animate="{ opacity: 1, y: 0, transition: { delay: 0.2 } }">
           <UAccordion
             trailing-icon="lucide:plus" :items="item.questions" :unmount-on-hide="false"
             :ui="{

@@ -36,8 +36,11 @@ useSeoMeta({
 <template>
   <UContainer v-if="page">
     <UPage>
-      <MLandingFaq :page="page" />
-      <MProjectLine />
+      <ClientOnly>
+        <MLandingFaq :page="page" />
+        <MProjectLine />
+        <MLandingTeam />
+      </ClientOnly>
     </UPage>
   </UContainer>
 </template>

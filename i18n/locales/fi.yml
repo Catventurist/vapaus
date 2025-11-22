@@ -11,6 +11,30 @@ submit:
     description: Lomake on lähetetty (tulossa).
 task:
   completed: Valmis
+  category:
+    idea: Idea
+    bug: Bugi
+    feature: Ominaisuus
+    documentation: Dokumentaatio
+cookies:
+  title: Evösteet koskien teemaa ja kieltä.
+  accept: Hyväksy
+  optout: Hylkää
+team: 
+  headline: Liity mukaan
+  title: Yhteisöömme
+  description: Uteliaisuutta ja tahtoa, loppu sujuu itsestään.
+  positions: Avoimet
+  about: Meistä
+  cat:
+    title: Perustaja
+    description: Entinen seikkailija, nykyinen koodaaja
+  jane:
+    title: Rakentelu
+    description: Tyhjän toimitus
+  john:
+    title: Kehitys
+    description: Virtuaalinen
 header:
   switchto: Vaihda tila
   language: Kieli

@@ -16,6 +16,25 @@ task:
     bug: Bug
     feature: Feature
     documentation: Documentation
+cookies:
+  title: Simple cookies for Theme and Language.
+  accept: Accept
+  optout: Opt out
+team: 
+  headline: We are hiring
+  title: Meet Our Community
+  description: Curiousity and passion, the rest follows.
+  positions: Open Positions
+  about: About Us
+  cat:
+    title: Founder
+    description: Former adventurist, current coder
+  jane:
+    title: Engineering
+    description: Doing nothing
+  john:
+    title: Development
+    description: Only virtual
 header:
   switchto: Switch to
   language: Language
