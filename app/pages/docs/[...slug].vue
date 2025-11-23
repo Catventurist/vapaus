@@ -67,7 +67,7 @@ const tocLinks = ref<PageLink[]>([
       <UContentToc :links="page.body.toc.links" highlight>
         <template #bottom>
           <USeparator v-if="page.body?.toc?.links?.length" class="bg-radial from-primary/40 to-transparent" />
-          <UPageLinks title="Links" :links="tocLinks" />
+          <UPageLinks :title="$t('links.title')" :links="tocLinks" class="-ms-4" />
         </template>
       </UContentToc>
     </template>

@@ -20,7 +20,26 @@ const onBeforeEnter = async () => {
 const lang = computed(() => locales[locale.value].code)
 const dir = computed(() => locales[locale.value].dir)
 
-const { data: navigation } = await useAsyncData('navigation-' + slug.value, () => queryCollectionNavigation('docs_' + locale.value as keyof Collections), {
+const [{ data: navigation }, { data: files }] = await Promise.all([
+  useAsyncData('navigation-' + slug.value, () => {
+    return Promise.all([
+      queryCollectionNavigation('docs_' + locale.value as keyof Collections).then(data => data[0]?.children)
+    ])
+  }, {
+    watch: [locale],
+    transform: data => data.flat()
+  }),
+  useLazyAsyncData('search-' + slug.value, () => {
+    return Promise.all([
+      queryCollectionSearchSections('docs_' + locale.value as keyof Collections)
+    ])
+  }, {
+    server: false,
+    watch: [locale],
+    transform: data => data.flat()
+  })
+])
+/* const { data: navigation } = await useAsyncData('navigation-' + slug.value, () => queryCollectionNavigation('docs_' + locale.value as keyof Collections), {
   transform: data => data.find(item => item.path === localePath('/docs'))?.children || [],
   watch: [locale]
 })
@@ -28,7 +47,7 @@ const { data: navigation } = await useAsyncData('navigation-' + slug.value, () =
 const { data: files } = useLazyAsyncData('search-' + slug.value, () => queryCollectionSearchSections('docs_' + locale.value as keyof Collections), {
   server: false,
   watch: [locale]
-})
+}) */
 
 useHead({
   meta: [
@@ -93,7 +112,7 @@ provide('navigation-' + slug.value, navigation)
     </NuxtLayout>
     <ClientOnly>
       <LazyUContentSearch
-        :files="files" shortcut="meta_k" :navigation="navigation" :links="links" 
+        :files="files" shortcut="meta_k" :navigation="navigation" :links="links"
         :fuse="{ resultLimit: 24 }" />
     </ClientOnly>
   </UApp>
@@ -102,7 +121,7 @@ provide('navigation-' + slug.value, navigation)
 <style>
 .my-enter-active,
 .my-leave-active {
-  transition: all 0.1s;
+  transition: all 0.3s;
 }
 .my-enter,
 .my-leave-active {

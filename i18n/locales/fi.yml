@@ -3,6 +3,56 @@ pricing:
   yearly: Vuosittain
   month: /kk
   year: /v
+  free: Vapaa
+  pro: Konkari
+  startup: Aloittelija
+  features: Ominaisuudet
+  models: Ihmisten tekemät mallit
+  online: Online
+  offline: Offline
+  p2p: P2P
+  tokens: Merkit
+  video: Videopuhelut
+  support: Tuki
+  security: Turva
+  unlimited: Rajaton
+  weeks: Viikkoa
+  users: Käyttäjää
+  start: Aloitetaan
+  true: Mukana
+arrow:
+  title: Koukeroiset Nuolet
+  description: Oudot osoittimet
+  variants: Muunnokset
+  wavy: Aalto
+  bouncy: Pirteä
+  smooth: Sileä
+  directions: Suunnat
+  right: Oikea
+  left: Vasen
+  down: Ylös
+  up: Alas
+  sizes: Koot
+stats:
+  title: Satunnaisia lukuja
+  description: Numerot menee ylös alas
+  revenue: 
+    title: Voittoa
+    description: Vuosittain toistuva
+  members: 
+    title: Jäsentä
+    description: Iloista käyttäjää
+  satisfaction:
+    title: Tyytyväisyys
+    description: Onnellisuuden määrä
+  downloads:
+    title: Latausta
+    description: Ohjelmiston latauksia
+  location: Espanja
+  date: "Elokuu 2025"
+  communities: Yhteisöä
+  details: Lisätietoa
+  events: Kaikki tapahtumat
 error:
   minlength: Liian lyhyt. Tarvitaan yli 1 kirjain.
 submit:
@@ -35,6 +85,25 @@ team:
   john:
     title: Kehitys
     description: Virtuaalinen
+inte:
+  title: Yhteensopiva monen työkalun kanssa
+  description: Käytetään Avoimen Lähdekoodin alustoja ja kirjastoja.
+  vscodium:
+    title: VSCodium
+    description: Vakoiluvapaa
+  stackblitz:
+    title: Stackblitz
+    description: Nettieditori
+  reka:
+    title: RekaUI
+    description: Perusta
+  tailwind:
+    title: Tailwind
+    description: CSS
+  start: Tutustu
+  blog: Selaa Blogeja
+  user: Vapauden kannattaja
+  quote: Elämä on täynnä yllätyksiä
 header:
   switchto: Vaihda tila
   language: Kieli
@@ -965,15 +1034,6 @@ time:
   h: t
   min: min
   weekshort: vk
-stats:
-  label: Kissa
-  location: Espanja
-  date: "Elokuu 2025"
-  members: Jäsentä
-  happy: Iloista käyttäjää
-  communities: Yhteisöä
-  details: Lisätietoa
-  events: Kaikki tapahtumat
 combo:
   empty: Tyhjä
   theme: Teema

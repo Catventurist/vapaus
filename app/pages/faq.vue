@@ -39,7 +39,6 @@ useSeoMeta({
       <ClientOnly>
         <MLandingFaq :page="page" />
         <MProjectLine />
-        <MLandingTeam />
       </ClientOnly>
     </UPage>
   </UContainer>

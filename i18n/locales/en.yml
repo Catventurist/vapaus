@@ -3,6 +3,56 @@ pricing:
   yearly: Yearly
   month: /month
   year: /year
+  free: Free
+  pro: Pro
+  startup: Startup
+  features: Features
+  models: Human-made Models
+  online: Online
+  offline: Offline
+  p2p: Peer to Peer
+  tokens: Tokens
+  video: Video Calls
+  support: Support
+  security: Security
+  unlimited: Unlimited
+  weeks: Weeks
+  users: Users
+  start: Get Started
+  true: Included
+arrow:
+  title: Squiqqly Arrows
+  description: Simple pointers
+  variants: Variants
+  wavy: Wavy
+  bouncy: Bouncy
+  smooth: Smooth
+  directions: Directions
+  right: Right
+  left: Left
+  down: Down
+  up: Up
+  sizes: Sizes
+stats:
+  title: Key Metrics
+  description: Numbers going up and down
+  revenue: 
+    title: Revenue
+    description: Annual recurring revenue
+  members: 
+    title: Members
+    description: Happy people worldwide
+  satisfaction:
+    title: Satisfaction
+    description: Customer happiness rate
+  downloads:
+    title: Downloads
+    description: Total app downloads
+  location: Spain
+  date: "July 2025"  
+  communities: Communities
+  details: Event details
+  events: View all events
 error:
   minlength: Too small. Expected string to have >=1 characters
 submit:
@@ -35,6 +85,25 @@ team:
   john:
     title: Development
     description: Only virtual
+inte:
+  title: Integration with several tools
+  description: Connect with free platforms and projects.
+  vscodium:
+    title: VSCodium
+    description: Less Tracking
+  stackblitz:
+    title: Stackblitz
+    description: Online Editor
+  reka:
+    title: RekaUI
+    description: Built on
+  tailwind:
+    title: Tailwind
+    description: CSS
+  start: Get Started
+  blog: Explore Blogs
+  user: Freedom Enthusiast
+  quote: Life is full of surprises
 header:
   switchto: Switch to
   language: Language
@@ -962,15 +1031,6 @@ time:
   h: h
   min: min
   weekshort: Wk
-stats:
-  label: Cat on a tree
-  location: Spain
-  date: "July 2025"
-  members: Members
-  happy: Happy users
-  communities: Communities
-  details: Event details
-  events: View all events
 combo:
   empty: Empty
   theme: Theme
