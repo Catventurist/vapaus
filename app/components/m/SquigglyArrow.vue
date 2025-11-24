@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<{
   strokeWidth: 4,
   class: '',
   direction: 'right',
-  variant: 'wavy',
+  variant: 'wavy'
 })
 
 const paths = {
@@ -36,7 +36,7 @@ const rotations = {
   right: 'rotate(0)',
   left: 'rotate(180 100 50)',
   down: 'rotate(90 100 50)',
-  up: 'rotate(-90 100 50)',
+  up: 'rotate(-90 100 50)'
 }
 
 const selectedPath = paths[props.variant]
@@ -46,11 +46,11 @@ const rotation = rotations[props.direction]
 <template>
   <svg :width="props.width" :height="props.height" viewBox="-10 -10 220 120" fill="none" :class="props.class">
     <g :transform="rotation" class="group">
-      <path 
+      <path
         :d="selectedPath.body" stroke="currentColor" :stroke-width="props.strokeWidth"
         stroke-linecap="round" fill="none" class="duration-300 group-hover:text-primary group-active:text-default" />
-      <path 
-        :d="selectedPath.head" stroke="currentColor" :stroke-width="props.strokeWidth" 
+      <path
+        :d="selectedPath.head" stroke="currentColor" :stroke-width="props.strokeWidth"
         stroke-linecap="round" class="duration-300 group-hover:text-primary group-active:text-default" />
     </g>
   </svg>

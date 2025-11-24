@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ButtonProps } from '@nuxt/ui';
+import type { ButtonProps } from '@nuxt/ui'
 
 const localePath = useLocalePath()
 const intItems = [
@@ -64,18 +64,18 @@ const testimonial = ref({
 </script>
 
 <template>
-  <UPageHero 
-    :title="$t('inte.title')" :description="$t('inte.description')" reverse 
+  <UPageHero
+    :title="$t('inte.title')" :description="$t('inte.description')" reverse
     orientation="horizontal" :links="links">
     <div class="container relative grid grid-cols-2 gap-2">
-      <UPageCard 
+      <UPageCard
         v-for="item in intItems" :key="item.title" :title="item.title" :description="item.description" :to="item.to"
         :icon="item.icon" spotlight :spotlight-color="item.color as any" />
       <UPageCard orientation="horizontal" variant="subtle" spotlight class="col-span-2 mt-4">
         <q>
-          {{ testimonial.quote }}   
-        </q>     
-        <UUser v-bind="testimonial.user" /> 
+          {{ testimonial.quote }}
+        </q>
+        <UUser v-bind="testimonial.user" />
       </UPageCard>
     </div>
   </UPageHero>

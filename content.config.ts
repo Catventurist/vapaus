@@ -190,6 +190,15 @@ export const collections = {
         }))
     })
   }),
+  authors_en: defineCollection({
+    type: 'data',
+    source: 'authors/**.yml',
+    schema: z.object({
+      name: z.string(),
+      avatar: z.string(),
+      url: z.string()
+    })
+  }),
   index_fi: defineCollection({
     source: 'fi/0.index.yml',
     type: 'page',
@@ -334,6 +343,15 @@ export const collections = {
             })
           )
         }))
+    })
+  }),
+  authors_fi: defineCollection({
+    type: 'data',
+    source: 'fi/authors/**.yml',
+    schema: z.object({
+      name: z.string(),
+      avatar: property(z.string()).editor({ input: 'media' }),
+      url: z.string()
     })
   })
 }
