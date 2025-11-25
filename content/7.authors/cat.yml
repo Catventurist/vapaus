@@ -1,0 +1,122 @@
+seo:
+  title: Catventurist - Designer and Adventurer
+  description: I'm Catventurist, a UX/UI designer and front-end developer. Creating and learning something new every day, to be truly free.
+title: Catventurist - Designer and Adventurer
+description: I'm Catventurist, a UX/UI designer and front-end developer. Creating and learning something new every day, to be truly free.
+hero:
+  links:
+    - label: Writings
+      to: /blog
+      color: primary
+      icon: lucide-newspaper
+      variant: soft
+  images:
+    - src: /catbirchdark.webp
+      alt: Random Image 1
+    - src: /catbirchdark.webp
+      alt: Random Image 2
+    - src: /catbirchdark.webp
+      alt: Random Image 3
+    - src: /catbirchdark.webp
+      alt: Random Image 4
+    - src: /catbirchdark.webp
+      alt: Random Image 5
+    - src: /catbirchdark.webp
+      alt: Random Image 6
+    - src: /catbirchdark.webp
+      alt: Random Image 7
+    - src: /catbirchdark.webp
+      alt: Random Image 8
+    - src: /catbirchdark.webp
+      alt: Random Image 9
+about:
+  title: About Me
+  description: |
+    Front-end development with decades of coding experience. Creativity combined with knowledge and life experience.
+    Sound strategy and good communication helps communities to thrive. Technology is a tool, in the end it matters, how is it used.
+experience:
+  title: Experience
+  items:
+    - position: Backend, Nuxt
+      date: 2020 - Present
+      company:
+        name: Simple apps
+        logo: i-simple-icons-nuxtdotjs
+        url: https://nuxt.com
+        color: '#00DC82'
+    - position: Frontend, Wordpress
+      date: 2000 - Present
+      company:
+        name: Grassroots communities
+        logo: i-simple-icons-wordpress
+        url: https://sydantenvoima.wordpress.com/
+        color: '#0000FF'
+    - position: Linux
+      date: 1990 - Present
+      company:
+        name: FOSS code
+        logo: i-simple-icons-linux
+        url: https://linuxmint.com/
+        color: '#ffff00'
+testimonials:
+  - quote: You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete.
+    author:
+      name: Buckminister Fuller
+      description: Designer
+      avatar:
+        src: /cat.png
+  - quote: The imagination is the golden pathway to everywhere.
+    author:
+      name: Terence McKenna
+      description: Author
+      avatar:
+        src: /cat.png
+  - quote: Chaga is one of the weirdest mushrooms you may ever see. A fungal parasite found on birch trees, Chaga is a hardened, blackened, crusty formation that looks like a bursting tumor.
+    author:
+      name: Paul Stamets
+      description: Mycological Master
+      avatar:
+        src: /cat.png
+  - quote: When I am sharply judgmental of any other person, it is because I sense or see reflected in them some aspect of myself that I don not want to acknowledge.
+    author:
+      name: Gabor Maté
+      description: Reseacher
+      avatar:
+        src: /cat.png
+blog:
+  title: Latest Articles
+  description: Some of my recent thoughts
+faq:
+  title: Frequently Asked Questions
+  description: Answers to common questions about my process and services.
+  categories:
+    - title: Services & Process
+      questions:
+        - label: What services do you offer?
+          content: |
+            I specialize in UX/UI design and front-end development. Creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js). My goal is to create different experiences, from virtual to real life.
+        - label: What is your thought process like?
+          content: |
+           Notice a thing to improve, think on it and make it happen. Close collaboration is important to keep motives high  with development teams during implementation. Starting on project needs, available resources and then introduce them.
+        - label: Do you work with companies?
+          content: |
+            I enjoy working with people who have good values, which can be distorted with falsified information and money, or actual resources. Organizing code is a lot similar with communities, both the favorite things to do.
+    - title: Pricing & Timelines
+      questions:
+        - label: How much does a project cost?
+          content: |
+            Project costs vary based on purpose, scope, complexity, features, and timeline. Project needs to service a real purpose, the values goes first. Can start around 0.04BTC, with average projects ranging between 0.07BTC and 0.25BTC. For consulting or specific design tasks, my day rate is 0.007BTC.
+        - label: What are your payment terms?
+          content: |
+            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments with Cryptocurrencies, like Bitcoin.
+        - label: How long does a typical project take?
+          content: |
+            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 1-2 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed estimate.
+        - label: Do you offer retainers or ongoing support?
+          content: |
+            Yes, if needing design support, feature development, or maintenance, just hit me up.
+    - title: About Me
+      questions:
+        - label: What do you enjoy most about your coding?
+          content: |
+            I love solving complex problems with new technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.

@@ -159,6 +159,9 @@ header:
   animations: 
     title: Animaatiot
     description: Tailwind & Motion.
+  authors: 
+    title: Tekijät
+    description: Käyttäjälista.
 empty: 
   page: 
     title: Sivua ei löytynyt

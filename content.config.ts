@@ -43,6 +43,20 @@ const createButtonSchema = () => z.object({
   target: z.enum(['_blank', '_self']).optional()
 })
 
+const createAuthorSchema = () => z.object({
+  name: z.string(),
+  description: z.string().optional(),
+  username: z.string().optional(),
+  twitter: z.string().optional(),
+  to: z.string().optional(),
+  avatar: createImageSchema().optional()
+})
+
+const createTestimonialSchema = () => z.object({
+  quote: z.string(),
+  author: createAuthorSchema()
+})
+
 export const collections = {
   index_en: defineCollection({
     source: '0.index.yml',
@@ -192,11 +206,48 @@ export const collections = {
   }),
   authors_en: defineCollection({
     type: 'data',
-    source: 'authors/**.yml',
+    source: '7.authors/**.yml',
     schema: z.object({
       name: z.string(),
-      avatar: z.string(),
+      avatar: property(z.string()).editor({ input: 'media' }),
       url: z.string()
+    })
+  }),
+  cat_en: defineCollection({
+    source: '7.authors/cat.yml',
+    type: 'page',
+    schema: z.object({
+      hero: z.object({
+        links: z.array(createButtonSchema()),
+        images: z.array(createImageSchema())
+      }),
+      about: createBaseSchema(),
+      experience: createBaseSchema().extend({
+        items: z.array(z.object({
+          date: z.date(),
+          position: z.string(),
+          company: z.object({
+            name: z.string(),
+            url: z.string(),
+            logo: property(z.string()).editor({ input: 'icon' }),
+            color: z.string()
+          })
+        }))
+      }),
+      testimonials: z.array(createTestimonialSchema()),
+      blog: createBaseSchema(),
+      faq: createBaseSchema().extend({
+        categories: z.array(
+          z.object({
+            title: z.string().nonempty(),
+            questions: z.array(
+              z.object({
+                label: z.string().nonempty(),
+                content: z.string().nonempty()
+              })
+            )
+          }))
+      })
     })
   }),
   index_fi: defineCollection({
@@ -347,11 +398,48 @@ export const collections = {
   }),
   authors_fi: defineCollection({
     type: 'data',
-    source: 'fi/authors/**.yml',
+    source: 'fi/7.authors/**.yml',
     schema: z.object({
       name: z.string(),
       avatar: property(z.string()).editor({ input: 'media' }),
       url: z.string()
+    })
+  }),
+  cat_fi: defineCollection({
+    source: 'fi/7.authors/cat.yml',
+    type: 'page',
+    schema: z.object({
+      hero: z.object({
+        links: z.array(createButtonSchema()),
+        images: z.array(createImageSchema())
+      }),
+      about: createBaseSchema(),
+      experience: createBaseSchema().extend({
+        items: z.array(z.object({
+          date: z.date(),
+          position: z.string(),
+          company: z.object({
+            name: z.string(),
+            url: z.string(),
+            logo: property(z.string()).editor({ input: 'icon' }),
+            color: z.string()
+          })
+        }))
+      }),
+      testimonials: z.array(createTestimonialSchema()),
+      blog: createBaseSchema(),
+      faq: createBaseSchema().extend({
+        categories: z.array(
+          z.object({
+            title: z.string().nonempty(),
+            questions: z.array(
+              z.object({
+                label: z.string().nonempty(),
+                content: z.string().nonempty()
+              })
+            )
+          }))
+      })
     })
   })
 }

@@ -3,9 +3,6 @@ import type { PageLink } from '@nuxt/ui'
 import { withLeadingSlash } from 'ufo'
 import type { PageCollections } from '@nuxt/content'
 
-definePageMeta({
-  layout: 'docs'
-})
 const localePath = useLocalePath()
 const route = useRoute()
 const { locale } = useI18n()
@@ -26,6 +23,10 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
 
 const title = page.value.seo?.title || page.value.title
 const description = page.value.seo?.description || page.value.description
+
+definePageMeta({
+  layout: 'docs'
+})
 
 useSeoMeta({
   title,
@@ -67,7 +68,7 @@ const tocLinks = ref<PageLink[]>([
       <UContentToc :links="page.body.toc.links" highlight>
         <template #bottom>
           <USeparator v-if="page.body?.toc?.links?.length" class="bg-radial from-primary/40 to-transparent" />
-          <UPageLinks :title="$t('links.title')" :links="tocLinks" class="-ms-4" />
+          <UPageLinks :title="$t('links.title')" :links="tocLinks" />
         </template>
       </UContentToc>
     </template>

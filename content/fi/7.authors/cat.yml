@@ -1,0 +1,127 @@
+seo:
+  title: Catventurist - Suunnittelija ja Seikkailija
+  description: Tervetuloa! Nimimerkki Catventurist tykkää koodailusta ja jutteluista. Luodaan uusia ja toimivia työkaluja yhteisöille sekä yksilöille.
+title: Nimimerkki Catventurist, Suunnittelija
+description: Catventurist tykkää koodailusta ja jutteluista. Luodaan uusia ja toimivia työkaluja yhteisöille sekä yksilöille.
+hero:
+  links:
+    - label: Kirjoitelmia
+      to: /fi/blog
+      color: primary
+      icon: lucide-newspaper
+      variant: soft
+  images:
+    - src: /catbirchdark.webp
+      alt: Random Image 1
+    - src: /catbirchdark.webp
+      alt: Random Image 2
+    - src: /catbirchdark.webp
+      alt: Random Image 3
+    - src: /catbirchdark.webp
+      alt: Random Image 4
+    - src: /catbirchdark.webp
+      alt: Random Image 5
+    - src: /catbirchdark.webp
+      alt: Random Image 6
+    - src: /catbirchdark.webp
+      alt: Random Image 7
+    - src: /catbirchdark.webp
+      alt: Random Image 8
+    - src: /catbirchdark.webp
+      alt: Random Image 9
+about:
+  title: Minusta
+  description: |
+    Koodausta vuosikymmenien harrastuspohjalta ja päivittäistä tiedon ahmimista, sekä itsensä tutkimista. 
+    Seikkailumieltä ja vapauden kaihoa unohtamatta.
+    Sovellusten kehittäminen on kivaa ja vielä parempi, jos siitä on muillekin hyötyä. 
+    Moraaliset päätökset ovat korkealla arvoasteikossa.
+experience:
+  title: Käytettyjä kirjastoja
+  items:
+    - position: Animaatioita
+      date: 2024
+      company:
+        name: Motion
+        logo: i-lucide-mouse-pointer-click
+        url: https://motion.dev/
+        color: '#5E6AD2'
+    - position: Sovelluskehittelyä
+      date: 2020
+      company:
+        name: Nuxt
+        logo: i-simple-icons-nuxtdotjs
+        url: https://nuxt.com
+        color: '#00DC82'
+    - position: Ulkoasujen kehittelyä
+      date: 2020
+      company:
+        name: Tailwind
+        logo: i-simple-icons-tailwindcss
+        url: https://tailwindcss.com/
+        color: '#FF6363'
+testimonials:
+  - quote: Asiat eivät muutu tosiasioita vastustamalla. Muuttaakseen jotain täytyy luoda malli, joka tekee nykyisen tarpeettomaksi.
+    author:
+      name: Buckminister Fuller
+      description: Suunnittelija
+      avatar:
+        src: /catbirchdark.webp
+  - quote: Mielikuvitus on kultainen polku kaikkialle.
+    author:
+      name: Terence McKenna
+      description: Tietäjä
+      avatar:
+        src: /catbirchdark.webp
+  - quote: Pakuri on oudoimpia sieniä maailmassa. Koivuissa kasvava sieniparasiitti on kovakuorinen ja väriltään musta muodostelma, joka näyttää räjähtävältä kasvaimelta.
+    author:
+      name: Paul Stamets
+      description: Mykologian mestari
+      avatar:        
+        src: /catbirchdark.webp
+  - quote: Kun tuomitaan toisia jyrkästi, se johtuu siitä että tunnetaan tai nähdään toisessa jokin ominaisuus, jota ei haluta tunnistaa itsessään.
+    author:
+      name: Gabor Maté
+      description: Tutkija
+      avatar:        
+        src: /catbirchdark.webp
+blog:
+  title: Kirjoitukset
+  description: Ajatuksia ja mietintöjä.
+faq:
+  title: UKK
+  description: Useimmin kysyttyjä kysymyksiä.
+  categories:
+    - title: Palvelut
+      questions:
+        - label: Mitä osaat?
+          content: |
+            Keskittynyt nettikehittelyyn, ulkoasuista lähtien. Tietotaitoa riittää ruoantuotannosta kryptovaluuttoihin pitkältä ajanjaksolta. Villityksenä Vue.js/Nuxt.js, tavoitteena tehdä mahdollisimman monipuolisia ohjelmistoja.
+        - label: Kuinka menettelet?
+          content: |
+            Paljon kommunikointia ja suunnittelua, joskus yrityksen ja erehdyksen kautta. Käyttökokemus on tärkeä osa-alue, tarpeiden tyydyttämisen lisäksi.
+        - label: Kenen kanssa toimit?
+          content: |
+            Oikeasti yhteistä hyvää tuottavat yhteisöt ja projektit, joissa ei ole turhaa byrokratiaa. Eurojen ulkopuolella toimiminen toivottavaa, kryptojen käyttäminen suositeltavaa.
+    - title: Korvaus ja aikataulu
+      questions:
+        - label: Mitä projekti yleensä kustantaa?
+          content: |
+            Riippuen tarkoitusperästä. Oikean avoimen lähdekoodin ratkaisut ovat ilmaisia, aivojen ja tietotaitojen käytöstä mielellään saisi korvauksen. Kustannus kasvaa projektin koon mukaan, firmoille lähtien 0,04BTC, laajemmista 0,07BTC:stä 0,25BTC:n. Konsultaatiota 0,007BTC/pv.
+        - label: Kuinka korvaus toteutetaan?
+          content: |
+            Yleensä 40% etumaksua ja loput 60% valmistuessa. Kryptovaluutat käy.
+        - label: Kauanko kestää?
+          content: |
+            Aikataulu riippuu projektin koosta ja monimutkaisuudesta. Pienemmät hoituu yleensä kuukauden sisällä, suuremmissa voi mennä 2-4kk. Aikataulutus hahmottuu suunnitelman perkaamisen mukaan.
+        - label: Minkälaista tukea on tarjolla?
+          content: |
+            Neuvonta ja opastus kuuluu pakettiin, oli se ulkoasu, lisätoiminnot tai perus ylläpito. Kaikesta voi neuvotella.
+    - title: Minusta
+      questions:
+        - label: Mistä tykkäät?
+          content: |
+            Ongelmanratkaisua käyttämällä päivittäin koppa pysyy kasassa ja virkeänä. Uusimpia koodivillityksiä seuraamalla inspiraatio kasvaa ja ravinteikasta ruokaa nauttimalla auringonvalon lomassa kroppakin pysyy kunnossa.
+        - label: Mitä harrastuksia?
+          content: |
+            Ympäriinsä kävely, kulkukissojen valokuvaus, tiedon ahmiminen ruudulta ja korvien kautta. Entinen seikkailija ja yhteisöjen jokapaikan höylä.

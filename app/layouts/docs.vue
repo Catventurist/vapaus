@@ -18,7 +18,7 @@ const navigation = inject<Ref<ContentNavigationItem[]>>('navigation-' + slug.val
               <template #top>
                 <UContentSearchButton :collapsed="false" />
               </template>
-              <UContentNavigation :navigation="navigation" highlight />
+              <UContentNavigation :navigation="navigation" highlight class="-ms-4" />
             </UPageAside>
           </template>
 

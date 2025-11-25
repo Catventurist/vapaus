@@ -159,6 +159,9 @@ header:
   animations: 
     title: Animations
     description: Tailwind & Motion.
+  authors: 
+    title: Authors
+    description: User listing.
 empty: 
   page:
     title: Page not found

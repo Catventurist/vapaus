@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import * as locales from '@nuxt/ui/locale'
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { Collections, PageCollections } from '@nuxt/content'
 import colors from 'tailwindcss/colors'
 
 const appConfig = useAppConfig()
 const colorMode = useColorMode()
-const color = computed(() => colorMode.value === 'dark' ? (colors as any)[appConfig.ui.colors.neutral][900] : 'white')
+const color = computed(() => colorMode.value === 'dark' ? (colors as never)[appConfig.ui.colors.neutral][900] : 'white')
 const radius = computed(() => `:root { --ui-radius: ${appConfig.theme.radius}rem; }`)
 const blackAsPrimary = computed(() => appConfig.theme.blackAsPrimary ? `:root { --ui-primary: black; } .dark { --ui-primary: white; }` : ':root {}')
 
@@ -23,7 +23,7 @@ const dir = computed(() => locales[locale.value].dir)
 const [{ data: navigation }, { data: files }] = await Promise.all([
   useAsyncData('navigation-' + slug.value, () => {
     return Promise.all([
-      queryCollectionNavigation('docs_' + locale.value as keyof Collections).then(data => data[0]?.children)
+      queryCollectionNavigation('docs_' + locale.value as keyof PageCollections).then(data => data[0]?.children)
     ])
   }, {
     watch: [locale],

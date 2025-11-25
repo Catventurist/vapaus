@@ -52,9 +52,9 @@ if (post.value.image?.src) {
       </template>
       <div class="flex flex-wrap items-center gap-3 mt-4">
         <UButton
-          v-for="(author, index) in post.authors" :key="index" :to="author.to" 
+          v-for="(author, index) in post.authors" :key="index" :to="author.to"
           color="neutral" variant="subtle" target="_blank" size="sm">
-          <UAvatar v-bind="author.avatar" alt="Author avatar" size="2xs" />
+          <UAvatar v-bind="author.avatar" :alt="author.name" size="2xs" />
           {{ author.name }}
         </UButton>
       </div>

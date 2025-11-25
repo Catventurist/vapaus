@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import * as locales from '@nuxt/ui/locale'
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { Collections, PageCollections } from '@nuxt/content'
 import colors from 'tailwindcss/colors'
 import type { NuxtError } from '#app'
 
@@ -14,7 +14,7 @@ defineProps({
 
 const appConfig = useAppConfig()
 const colorMode = useColorMode()
-const color = computed(() => colorMode.value === 'dark' ? (colors as any)[appConfig.ui.colors.neutral][900] : 'white')
+const color = computed(() => colorMode.value === 'dark' ? (colors as never)[appConfig.ui.colors.neutral][900] : 'white')
 const radius = computed(() => `:root { --ui-radius: ${appConfig.theme.radius}rem; }`)
 const blackAsPrimary = computed(() => appConfig.theme.blackAsPrimary ? `:root { --ui-primary: black; } .dark { --ui-primary: white; }` : ':root {}')
 
@@ -28,7 +28,7 @@ const onBeforeEnter = async () => {
 const lang = computed(() => locales[locale.value].code)
 const dir = computed(() => locales[locale.value].dir)
 
-const { data: navigation } = await useAsyncData('navigation-' + slug.value, () => queryCollectionNavigation('docs_' + locale.value as keyof Collections), {
+const { data: navigation } = await useAsyncData('navigation-' + slug.value, () => queryCollectionNavigation('docs_' + locale.value as keyof PageCollections), {
   transform: data => data.find(item => item.path === localePath('/docs'))?.children || [],
   watch: [locale]
 })
@@ -100,9 +100,7 @@ provide('navigation-' + slug.value, navigation)
       <UError :error="error" :transition="{ name: 'my', mode: 'out-in', onBeforeEnter }" />
     </NuxtLayout>
     <ClientOnly>
-      <LazyUContentSearch
-        :files="files" shortcut="meta_k" :navigation="navigation" :links="links" 
-        :fuse="{ resultLimit: 24 }" />
+      <LazyUContentSearch :files="files" shortcut="meta_k" :navigation="navigation" :links="links" :fuse="{ resultLimit: 24 }" />
     </ClientOnly>
   </UApp>
 </template>
@@ -110,7 +108,7 @@ provide('navigation-' + slug.value, navigation)
 <style>
 .my-enter-active,
 .my-leave-active {
-  transition: all 0.1s;
+  transition: all 0.13s;
 }
 .my-enter,
 .my-leave-active {
