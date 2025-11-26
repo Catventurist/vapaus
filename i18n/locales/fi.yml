@@ -55,6 +55,13 @@ stats:
   events: Kaikki tapahtumat
 error:
   minlength: Liian lyhyt. Tarvitaan yli 1 kirjain.
+line:
+  open: avasi
+  mark: merkitsi pyynnön tarkistusvalmiiksi
+  comment: kommentoi
+  merge: yhdisti
+  changes: Tein pieniä muutoksia. Kerro mitä mieltä olet. 
+  looks: Näyttää hyvältä. Siistitty tarpeeksi puhtaaksi.
 submit:
   success:
     title: Onnistui
@@ -162,6 +169,11 @@ header:
   authors: 
     title: Tekijät
     description: Käyttäjälista.
+  home: Koti
+  hero: Alku
+  quotes: Lausahdukset
+  profile: Profiili
+  settings: Asetukset
 empty: 
   page: 
     title: Sivua ei löytynyt

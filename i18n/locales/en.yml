@@ -55,6 +55,13 @@ stats:
   events: View all events
 error:
   minlength: Too small. Expected string to have >=1 characters
+line:
+  open: opened this
+  mark: marked this pull request as ready for review
+  comment: commented on this
+  merge: merged this
+  changes: I have made a few changes, let me know what you think! 
+  looks: Looks great! Good job on cleaning it up.
 submit:
   success:
     title: Success
@@ -162,6 +169,11 @@ header:
   authors: 
     title: Authors
     description: User listing.
+  home: Home
+  hero: Hero
+  quotes: Quotes
+  profile: Profile
+  settings: Settings
 empty: 
   page:
     title: Page not found

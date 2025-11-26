@@ -40,6 +40,11 @@ const items = computed(() => [{
       description: $t('header.projects.description'),
       to: localePath('/projects'),
       icon: 'lucide-anvil'
+    }, {
+      label: $t('header.authors.title'),
+      description: $t('header.authors.description'),
+      to: localePath('/cat'),
+      icon: 'lucide-cat'
     }
   ]
 }, {

@@ -58,7 +58,7 @@ const tocLinks = ref<PageLink[]>([
 
 <template>
   <UPage v-if="page">
-    <UPageHeader :title="page.title" :description="page.description" />
+    <UPageHeader :title="page?.title" :description="page?.description" />
     <UPageBody>
       <ContentRenderer v-if="page.body" :value="page" />
       <USeparator v-if="surround?.length" class="h-1 bg-radial from-primary/40 to-transparent" />

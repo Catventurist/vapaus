@@ -13,7 +13,7 @@ defineProps<{
     :ui="{
       headline: 'flex items-center justify-center',
       title: 'text-shadow-md max-w-lg mx-auto',
-      links: 'mt-4 flex-col justify-center items-center' }">
+      links: 'mt-4 flex-col justify-center items-center' }" id="hero">
     <template #headline>
       <Motion
         :initial="{ scale: 1.1, opacity: 0, filter: 'blur(20px)' }"

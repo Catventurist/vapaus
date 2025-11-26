@@ -39,14 +39,14 @@ defineI18nRoute({
 </script>
 
 <template>
-  <UPage v-if="page">
+  <div v-if="page">
     <LandingHero :page />
-    <UPageSection :ui="{ container: 'pt-0 lg:grid lg:grid-cols-2 lg:gap-8' }">
+    <div class="pt-0 lg:grid lg:grid-cols-2 lg:gap-8">
       <LandingAbout :page />
       <LandingWorkExperience :page />
-    </UPageSection>
+    </div>
     <LandingBlog :page />
     <LandingTestimonials :page />
     <LandingFAQ :page />
-  </UPage>
+  </div>
 </template>
