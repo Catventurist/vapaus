@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { withLeadingSlash } from 'ufo'
 import type { PageCollections } from '@nuxt/content'
+import { MPortSkills } from '#components'
 
 const route = useRoute()
 const { locale } = useI18n()
@@ -37,6 +38,7 @@ useSeoMeta({
   <UContainer v-if="page">
     <UPage>
       <ClientOnly>
+        <MPortSkills />
         <MLandingFaq :page="page" />
         <MProjectLine />
       </ClientOnly>

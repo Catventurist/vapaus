@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { withLeadingSlash } from 'ufo'
-import type { Collections } from '@nuxt/content'
+import type { Collections, PageCollections } from '@nuxt/content'
 import { Motion } from 'motion-v'
 
 const { locale } = useI18n()
 const route = useRoute()
 const slug = computed(() => withLeadingSlash(String(route.params.slug)))
 
-const { data: page } = await useAsyncData('pro-' + slug.value, () => queryCollection('pro_' + locale.value as keyof Collections).first(), {
+const { data: page } = await useAsyncData('pro-' + slug.value, () => queryCollection('pro_' + locale.value as keyof PageCollections).first(), {
   watch: [locale]
 })
 if (!page.value) {
@@ -18,7 +18,7 @@ if (!page.value) {
   })
 }
 
-const { data: projects } = await useAsyncData('projects-' + slug.value, () => queryCollection('projects_' + locale.value as keyof Collections).all(), {
+const { data: projects } = await useAsyncData('projects-' + slug.value, () => queryCollection('projects_' + locale.value as keyof PageCollections).all(), {
   watch: [locale]
 })
 

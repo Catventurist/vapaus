@@ -1,0 +1,124 @@
+title: Based on
+description: Ethics and Morals
+headline: Core Values
+values:
+  - id: innovation
+    name: Innovation
+    description:
+      We constantly push boundaries and challenge the status quo fostering a culture where creative thinking and experimentation are encouraged at all levels of the organization.
+    icon: lucide-lightbulb
+    color: text-amber-500
+    principles:
+      - Embrace experimentation and calculated risk-taking
+      - Challenge assumptions and existing processes
+      - Dedicate time and resources to exploring new ideas
+      - Learn from failures and iterate quickly
+    testimonial:
+      quote:
+        Working in an environment that truly values innovation is not just about having the latest technology—it is about feeling empowered to question experiment and sometimes fail. This culture has allowed us to develop solutions no one else has thought of yet.
+      author:
+        name: Alex Chen
+        description: Lead Product Engineer
+        avatar:
+          src: /cat.png
+    image: /catbirchdark.webp
+  - id: integrity
+    name: Integrity
+    description:
+      We believe in transparency honesty and ethical conduct in everything we do. Trust is the foundation of our relationships with customers partners and each other.
+    icon: lucide-shield-check
+    color: text-blue-500
+    principles: 
+    - Be honest and transparent in all communications
+    - Do what is right even when it is difficult
+    - Keep commitments and take accountability for mistakes
+    - Protect private data and confidential information    
+    testimonial: 
+      quote:
+        In my ten years with the company I have seen us turn down lucrative opportunities that did not align with our ethical standards. That consistent commitment to integrity is not just good ethics—it is built an unparalleled level of trust with our customers.
+      author: 
+        name: Sarah Johnson
+        description: Senior Account Director
+      avatar: 
+        src: /cat.png
+    image: /catbirchdark.webp 
+  - id: collaboration
+    name: Collaboration
+    description:
+      We achieve more together than alone. By combining diverse perspectives and skills we create solutions that are stronger more innovative and more effective than any individual could produce.
+    icon: lucide-users
+    color: text-indigo-500
+    principles: 
+      - Value and seek diverse perspectives
+      - Share knowledge openly across teams
+      - Give credit and celebrate team achievements
+      - Support colleagues and prioritize team success
+    testimonial: 
+      quote:
+        The collaborative spirit here is not just talk—it is built into how we work. Even as we have grown to multiple offices globally we haveve maintained a culture where everyone is input is valued and people genuinely enjoy working together to solve challenging problems.
+      author: 
+        name: Miguel Hernandez
+        description: Global Operations Manager
+        avatar: 
+          src: /cat.png
+    image: /catbirchdark.webp
+  - id: customer-focus
+    name: Customer Focus
+    description:
+      Our customers are at the center of everything we do. We are committed to understanding their needs exceeding their expectations and building lasting relationships based on mutual success.
+    icon: lucide-heart
+    color: text-red-500
+    principles: 
+      - Deeply understand customer needs and pain points
+      - Prioritize features that deliver true customer value
+      - Proactively gather and implement customer feedback
+      - Measure success through customer outcomes
+    testimonial: 
+      quote:
+        I have been amazed at how customer feedback directly shapes our product roadmap. When I joined I expected the usual lip service to customer-centricity but here customer success genuinely drives every decision from product features to support policies.
+      author: 
+        name: Avery Wilson
+        description: Customer Success Lead
+        avatar: 
+        src: /cat.png
+    image: /catbirchdark.webp
+  - id: excellence
+    name: Excellence
+    description:
+      We strive for excellence in everything we do from the quality of our products to our customer service. We set high standards and continuously work to exceed them through learning and improvement.
+    icon: lucide-area-chart
+    color: text-emerald-500
+    principles: 
+      - Set ambitious goals and high standards
+      - Pursue continuous improvement through feedback
+      - Pay attention to details without losing sight of the big picture
+      - Take pride in delivering exceptional quality    
+    testimonial: 
+      quote:
+        The most inspiring thing about working here is how everyone strives for excellence while remaining humble. There is always a sense that we can do better—not from a place of dissatisfaction but from genuine passion for creating the best possible experience for our users.
+      author: 
+        name: Jordan Taylor
+        description: Quality Assurance Director
+        avatar: 
+          src: /cat.png
+    image: /catbirchdark.webp
+  - id: sustainability
+    name: Sustainability
+    description:
+      We are committed to creating a positive environmental and social impact. Our business decisions consider long-term sustainability and our responsibility to future generations.
+    icon: lucide-globe
+    color: text-green-500
+    principles: 
+      - Minimize environmental impact in operations and products
+      - Support community initiatives and social causes
+      - Consider long-term sustainability in all business decisions
+      - Measure and report on environmental and social performance    
+    testimonial: 
+      quote:
+        When we announced our carbon-neutral initiative I was not sure if it would be more than a marketing exercise. Three years later we have reduced emissions by 68% switched to renewable energy and built sustainability requirements into our entire supply chain. It is real change.
+      author: 
+        name: Priya Patel
+        description: Sustainability Program Manager
+        avatar: 
+          src: /cat.png
+    image: /catbirchdark.webp

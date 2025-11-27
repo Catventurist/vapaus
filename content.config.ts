@@ -44,17 +44,29 @@ const createButtonSchema = () => z.object({
 })
 
 const createAuthorSchema = () => z.object({
-  name: z.string(),
+  name: z.string().optional(),
   description: z.string().optional(),
   username: z.string().optional(),
-  twitter: z.string().optional(),
   to: z.string().optional(),
-  avatar: createImageSchema().optional()
+  avatar: createImageSchema().optional(),
+  bio: z.string().optional(),
+  role: z.string().optional()
 })
 
 const createTestimonialSchema = () => z.object({
-  quote: z.string(),
-  author: createAuthorSchema()
+  quote: z.string().optional(),
+  author: createAuthorSchema().optional()
+})
+
+const createValuechema = () => z.object({
+  id: z.string(),
+  name: z.string(),
+  description: z.string(),
+  icon: z.string(),
+  color: z.string(),
+  principles: z.array(z.string()),
+  testimonial: createTestimonialSchema(),
+  image: property(z.string()).editor({ input: 'media' })
 })
 
 export const collections = {
@@ -205,7 +217,7 @@ export const collections = {
     })
   }),
   authors_en: defineCollection({
-    type: 'data',
+    type: 'page',
     source: '7.authors/**.yml',
     schema: z.object({
       name: z.string(),
@@ -248,6 +260,14 @@ export const collections = {
             )
           }))
       })
+    })
+  }),
+  values_en: defineCollection({
+    source: '8.values.yml',
+    type: 'page',
+    schema: z.object({
+      headline: z.string().optional(),
+      values: z.array(createValuechema())
     })
   }),
   index_fi: defineCollection({
@@ -397,7 +417,7 @@ export const collections = {
     })
   }),
   authors_fi: defineCollection({
-    type: 'data',
+    type: 'page',
     source: 'fi/7.authors/**.yml',
     schema: z.object({
       name: z.string(),
@@ -440,6 +460,14 @@ export const collections = {
             )
           }))
       })
+    })
+  }),
+  values_fi: defineCollection({
+    source: 'fi/8.values.yml',
+    type: 'page',
+    schema: z.object({
+      headline: z.string().optional(),
+      values: z.array(createValuechema())
     })
   })
 }

@@ -45,6 +45,11 @@ const items = computed(() => [{
       description: $t('header.authors.description'),
       to: localePath('/cat'),
       icon: 'lucide-cat'
+    }, {
+      label: $t('header.values.title'),
+      description: $t('header.values.description'),
+      to: localePath('/values'),
+      icon: 'lucide-hand-heart'
     }
   ]
 }, {
@@ -55,7 +60,7 @@ const items = computed(() => [{
 }, {
   label: $t('header.faq'),
   to: localePath('/faq'),
-  icon: 'lucide-message-circle-question-mark',
+  icon: 'lucide-list-check',
   active: route.path.startsWith(localePath('/faq'))
 }])
 </script>

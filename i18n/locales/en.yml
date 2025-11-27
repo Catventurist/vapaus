@@ -53,6 +53,37 @@ stats:
   communities: Communities
   details: Event details
   events: View all events
+features:
+  highlight: Features
+  title: Key Benefits of Freedom
+  description: The Feeling is worth all the hard work.
+  pro:
+    title: Learn from others
+    description: The best way to learn is by observing and doing.
+  needs:
+    title: Basic Needs
+    description: Food, water and shelter are required.
+  hobbies:
+    title: Things to do
+    description: Hobbies instead of a "career".
+  online:
+    title: Online Tools
+    description: Free and Open Source.
+  communication:
+    title: Open Communication
+    description: Honest, truthful, collaborative.
+  intuition:
+    title: Intuition
+    description: Following the heart and feeling more.
+integration:
+  title: Integrations
+  description: Connecting different tools.
+  etherpad: Collaboration by using online notes.
+  telegram: Receive updates and notifications while messaging.
+  codepen: Create designs and devalop your skills.
+  signal: Communication with some privacy options.
+  gitlab: Changes and updates using git.
+  github: Automate workflows and track changes.
 error:
   minlength: Too small. Expected string to have >=1 characters
 line:
@@ -152,7 +183,7 @@ header:
   faq: FAQ
   introduction:
     title: Introduction
-    description: Fully styled texts.
+    description: Information to get started.
   essentials: 
     title: Essentials
     description: Learn how to use components.
@@ -167,13 +198,16 @@ header:
     title: Animations
     description: Tailwind & Motion.
   authors: 
-    title: Authors
-    description: User listing.
+    title: Author
+    description: Animated user profile.
   home: Home
   hero: Hero
   quotes: Quotes
   profile: Profile
   settings: Settings
+  values: 
+    title: Values
+    description: Ethics and Morals.
 empty: 
   page:
     title: Page not found
@@ -570,7 +604,7 @@ profile:
   highlights: Highlights
   media: Media
   reactions: Reactions
-  username: Cat
+  username: Catventurist
   usertag: cat
   userbio: Catventures and Catography with some Coding
   follownum: "0"
@@ -732,35 +766,12 @@ about:
     comments: Positive comments
     available: Available virtually
 values:
-  title: Core Values
-  description: Making things which matter.
-  innovation:
-    title: Innovation
-    description: We continuously challenge assumptions and explore new possibilities.
-  integrity:
-    title: Integrity
-    description: We operate with honesty, transparency, and ethical responsibility.
-  collaboration:
-    title: Collaboration
-    description: We bring different perspectives together to achieve extraordinary results.
-  excellence:
-    title: Excellence
-    description: We strive for outstanding quality in everything we create.
-  adaptability:
-    title: Adaptability
-    description: We embrace change and evolve to meet new challenges.
-  empathy:
-    title: Empathy
-    description: We design with an understanding of human needs and experiences.
-  purpose:
-    title: Purpose
-    description: We focus on creating meaningful impact that matters.
-  transparency:
-    title: Transparency
-    description: We communicate openly and honestly with everyone.
-  sustainability:
-    title: Sustainability
-    description: We consider long-term environmental and social impact in our work.
+  principles: Key Principles
+  illustration: Illustration of our
+  values: values
+  aspect: These values guide every aspect of our work.
+  part: Want to be part of a team that lives these values every day?
+  join: Join Our Community
 skills:
   frontend: Frontend
   backend: Backend
@@ -779,6 +790,10 @@ skills:
   blockchain: Blockchain
   cloud: Cloud
   browser: Browser
+  decent: Decentralization
+  tokens: Tokens
+  contracts: Automated Contracts
+  receipts: Multimedia Receipts
 video : 
   title: Video
   description: From travelling times.
@@ -930,7 +945,6 @@ button:
   back: Back
   continue: Continue
   complete: Complete
-features: Features
 greeting:
   title: Hey there
   description: How is it going?

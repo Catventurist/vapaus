@@ -53,6 +53,37 @@ stats:
   communities: Yhteisöä
   details: Lisätietoa
   events: Kaikki tapahtumat
+features:
+  highlight: Ominaisuudet
+  title: Vapaudessa elämisen etuja
+  description: Saavutettu tunne on kaiken vaivan arvoista.
+  pro:
+    title: Kanssakulkijoilta oppiminen
+    description: Helpoin tapa oppia on seurata ja tehdä.
+  needs:
+    title: Perustarpeet
+    description: Ruoka, juoma ja katto pään päällä on edellytys.
+  hobbies:
+    title: Mielekästä tekemistä
+    description: Harrastuksia "uran" sijaan.
+  online:
+    title: Nettiohjelmistot
+    description: Ilmaista ja Avoimella Lähdekoodilla.
+  communication:
+    title: Avoin keskustelu
+    description: Aito, rehellinen ja myötäelävä.
+  intuition:
+    title: Intuitio
+    description: Sydämen kuuntelu ja tunteiden lisääntyminen.
+integration:
+  title: Yhdentyminen
+  description: Erilaisten työkalujen käyttöä.
+  etherpad: Muistioiden kirjoittamista yhtä aikaa.
+  telegram: Päivityksiä ja ilmoituksia viesteilyn lomassa.
+  codepen: Mallien luonti ja taitojen kehittäminen.
+  signal: Viestittelyä tietoturvalla höystettynä.
+  gitlab: Muutokset ja päivitykset gitillä.
+  github: Työnkulun ja muutosten seuraaminen.
 error:
   minlength: Liian lyhyt. Tarvitaan yli 1 kirjain.
 line:
@@ -127,7 +158,7 @@ header:
   docs: Dokumentit
   pricing: 
     title: Hintoja
-    description: Jokaiselle jotain.
+    description: Vaihto on vapaaehtoista.
   blog: Blogi
   changelog: 
     title: Muutoslista
@@ -165,15 +196,18 @@ header:
     description: Keskeneräisiä asioita.
   animations: 
     title: Animaatiot
-    description: Tailwind & Motion.
+    description: Tailwind & Motion-korostukset.
   authors: 
-    title: Tekijät
-    description: Käyttäjälista.
+    title: Tekijä
+    description: Tietoa animoidussa muodossa.
   home: Koti
   hero: Alku
   quotes: Lausahdukset
   profile: Profiili
   settings: Asetukset
+  values: 
+    title: Arvot
+    description: Etiikka and Moraalit.
 empty: 
   page: 
     title: Sivua ei löytynyt
@@ -567,7 +601,7 @@ profile:
   highlights: Kohokohdat
   media: Media
   reactions: Reaktiot
-  username: Cat
+  username: Catventurist
   usertag: cat
   userbio: Seikkailua ja koodausta.
   follownum: "0"
@@ -688,7 +722,6 @@ quotes:
     quote: Kun tuomitsen toisia jyrkästi, se johtuu siitä että tunnen tai näen toisessa jonkin ominaisuuden, jota en halua tunnistaa.
     name: Gabor Maté
     description: Tutkija
-features: Ominaisuuksia
 icons:
   title: Kuvakkeita
   description: Motionilla animoitu
@@ -751,35 +784,12 @@ site:
   description: Vapaa ja avoin alusta
   offer: Julkaisupäivä lähenee
 values:
-  title: Arvomaailma
-  description: Päämäärät avoimesti esillä.
-  innovation:
-    title: Kekseliäisyys
-    description: Olettamien kyseenalaistamista ja uusien mahdollisuuksien etsintää.
-  integrity:
-    title: Rehellisyys
-    description: Toimimme avoimesti, eettisesti ja esteittä.
-  collaboration:
-    title: Yhteistyö
-    description: Yhdistelemme eri näkemyksiä ja kokemuksia saavuttaakseemme enemmän.
-  excellence:
-    title: Ahkeruus
-    description: Luomme hyvää laatua ja tietoa, joka sopii moneen tarkoitukseen.
-  adaptability:
-    title: Sopeutuminen
-    description: Muutos on pysyvää ja mukaudumme sen mukaan.
-  empathy:
-    title: Empatia
-    description: Pyrimme ymmärtämään tunteet, tarpeet ja kokemukset.
-  purpose:
-    title: Tarkoitus
-    description: Näkyvää ja leviävää tekemistä ja esimerkkiä.
-  transparency:
-    title: Läpinäkyvää
-    description: Koodi on avointa, vain tärkeät tiedot pidetään kryptattuna.
-  sustainability:
-    title: Kestävyys
-    description: Ympäristön ja kulttuurin näkökohdat otetaan huomioon toiminnassa.
+  principles: Perusarvot
+  illustration: Kuvaus
+  values: arvoista
+  aspect: Nämä ohjaavat kaikkea toimintaa.
+  part: Haluatko olla osana yhteisöä, joka pitää periaatteista kiinni?
+  join: Liity Yhteisöön
 social:
   badge: SOME
   title: Viimeisimmät
@@ -800,9 +810,13 @@ skills:
   technical: Tekniset taidot
   tools: Työkalut
   prof: Taitotaso
-  blockchain: Lohkoketju
+  blockchain: Lohkoketjut
   cloud: Pilvi
   browser: Selain
+  decent: Hajautetut
+  tokens: Merkit
+  contracts: Automaattiset sopimukset
+  receipts: Näyttävät kuitit
 video : 
   title: Video
   description: Vanhoilta seikkailuajoilta.

@@ -52,6 +52,11 @@ const items = ref<DropdownMenuItem[]>([
     label: 'Github',
     icon: 'simple-icons-github',
     to: 'https://github.com/catventurist'
+  },
+  {
+    label: 'Gitlab',
+    icon: 'simple-icons-gitlab',
+    to: 'https://gitlab.com/catventurist'
   }
 ])
 
@@ -69,11 +74,11 @@ watch(
 
 <template>
   <ClientOnly>
-    <div class="fixed top-18 sm:top-16 mx-auto end-4 transform -translate-x-2 z-10">
+    <div class="fixed top-18 sm:top-16 mx-auto end-4 pe-2 z-10">
       <UNavigationMenu
         v-model="activeSection" :items="navLinks" variant="link" color="neutral"
-        class="bg-radial from-primary/10 to-muted/20 backdrop-blur-md rounded-full px-2 sm:px-4 inset-shadow-sm inset-shadow-primary"
-        :ui="{ link: 'px-2 py-1', linkLeadingIcon: 'hidden' }">
+        class="bg-radial from-primary/10 to-muted/80 backdrop-hue-rotate-90 backdrop-blur-xs rounded-full px-2 sm:px-4 inset-shadow-sm inset-shadow-primary"
+        :ui="{ link: 'px-2 py-1', linkLeadingIcon: 'hidden', viewport: 'shadow-none hidden' }">
         <template #item="{ item, active }">
           <ULink
             as-child :to="{ path: '', hash: item.to as string }" exact-hash class="rounded-md"
@@ -85,11 +90,14 @@ watch(
           </ULink>
         </template>
         <template #list-trailing>
-          <UDropdownMenu
-            :items="items" :content="{ align: 'end', side: 'bottom', sideOffset: 4 }" hover
-            :ui="{ content: 'min-w-28' }">
+          <UPopover mode="hover" :ui="{ content: 'min-w-28 bg-transparent' }">
             <UAvatar src="/cat.png" :chip="{ inset: true, color: 'success' }" class="mb-1" />
-          </UDropdownMenu>
+            <template #content>
+              <div class="grid grid-cols-2">
+                <UButton v-for="item in items" variant="link" class="bg-default/60 backdrop-blur-md" :key="item.label" :label="item.label" :icon="item.icon" :to="item.to" />
+              </div>
+            </template>
+          </UPopover>
         </template>
       </UNavigationMenu>
     </div>
