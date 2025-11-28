@@ -218,7 +218,10 @@ export const collections = {
   }),
   authors_en: defineCollection({
     type: 'page',
-    source: '7.authors/**.yml',
+    source: {
+      include: '7.authors/**.yml',
+      exclude: ['7.authors/cat.yml']
+    },
     schema: z.object({
       name: z.string(),
       avatar: property(z.string()).editor({ input: 'media' }),
@@ -418,7 +421,10 @@ export const collections = {
   }),
   authors_fi: defineCollection({
     type: 'page',
-    source: 'fi/7.authors/**.yml',
+    source: {
+      include: 'fi/7.authors/**.yml',
+      exclude: ['fi/7.authors/cat.yml']
+    },
     schema: z.object({
       name: z.string(),
       avatar: property(z.string()).editor({ input: 'media' }),

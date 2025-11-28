@@ -200,10 +200,12 @@ header:
   authors: 
     title: Author
     description: Animated user profile.
+  profile: 
+    title: Profile
+    description: Info about the author.
   home: Home
   hero: Hero
   quotes: Quotes
-  profile: Profile
   settings: Settings
   values: 
     title: Values
@@ -609,6 +611,11 @@ profile:
   userbio: Catventures and Catography with some Coding
   follownum: "0"
   followernum: "0"
+  text1: All components can be translated
+  text2: 1. Click on Open
+  text3: 2. Customize with prompts
+  text4: 3. Deploy to your app
+  answer: Well done!
 nav:
   site:
     title: Vapaus
@@ -766,6 +773,33 @@ about:
     comments: Positive comments
     available: Available virtually
 values:
+  innovation:
+    title: Innovation
+    description: Creativity and curiousity
+  integrity:
+    title: Integrity
+    description: Morally sound actions
+  collaboration:
+    title: Collaboration
+    description: Working together is enjoyable
+  excellence:
+    title: Excellence
+    description: Aiming for perfection
+  adaptability:
+    title: Adaptability
+    description: Time changes, so do we
+  empathy:
+    title: Empathy
+    description: Help and get helped
+  purpose:
+    title: Purpose
+    description: Meaning for life
+  transparency:
+    title: Transparency
+    description: Honesty goes for a long way
+  sustainability:
+    title: Sustainability
+    description: Actual good practices
   principles: Key Principles
   illustration: Illustration of our
   values: values

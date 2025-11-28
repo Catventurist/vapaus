@@ -39,6 +39,11 @@ const items = ref<DropdownMenuItem[]>([
     to: localePath('/blog')
   },
   {
+    label: $t('header.profile.title'),
+    icon: 'i-lucide-hammer',
+    to: localePath('/profile')
+  },
+  {
     label: 'Telegram',
     icon: 'simple-icons-telegram',
     to: 'https://t.me/catventurists'

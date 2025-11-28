@@ -15,6 +15,9 @@ const { data: authors } = await useAsyncData('authors-' + slug.value, () => {
  const name = computed(() => authors.value?.name)
 const avatar = computed(() => authors.value?.avatar)
 const to = computed(() => authors.value?.to) */
+
+const localePath = useLocalePath()
+
 definePageMeta({
   layout: 'default'
 })
@@ -40,7 +43,7 @@ defineI18nRoute({
           <div class="flex flex-row justify-between items-center">
             <SocialButtons class="basis-1/5" />
             <UUser
-              name="Catventurist" :description="$t('profile.userbio')" to="/"
+              name="Catventurist" :description="$t('profile.userbio')" :to="localePath('/cat')"
               class="rounded-xl p-4 duration-300 hover:scale-110 hover:bg-radial from-primary/20 to-muted/60"
               :avatar="{ src: '/cat.png', icon: 'i-lucide-cat' }"
               :chip="{ color: 'success', position: 'top-right' }" />

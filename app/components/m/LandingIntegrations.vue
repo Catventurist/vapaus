@@ -69,8 +69,8 @@ const testimonial = ref({
     orientation="horizontal" :links="links">
     <div class="container relative grid grid-cols-2 gap-2">
       <UPageCard
-        v-for="item in intItems" :key="item.title" :title="item.title" :description="item.description" :to="item.to"
-        :icon="item.icon" spotlight :spotlight-color="item.color as any" />
+        v-for="item in intItems" :key="item.title" :title="item.title"
+        :description="item.description" :to="item.to" :icon="item.icon" />
       <UPageCard orientation="horizontal" variant="subtle" spotlight class="col-span-2 mt-4">
         <q>
           {{ testimonial.quote }}

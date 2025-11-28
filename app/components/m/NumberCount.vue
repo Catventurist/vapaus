@@ -27,7 +27,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <pre class="text-5xl text-primary flex justify-center items-center">
+  <span>
     <RowValue :value="rounded" />
-  </pre>
+  </span>
 </template>

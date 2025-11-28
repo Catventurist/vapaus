@@ -200,14 +200,16 @@ header:
   authors: 
     title: Tekijä
     description: Tietoa animoidussa muodossa.
+  profile: 
+    title: Profiili
+    description: Tietoa tekijästä.
   home: Koti
   hero: Alku
   quotes: Lausahdukset
-  profile: Profiili
   settings: Asetukset
   values: 
     title: Arvot
-    description: Etiikka and Moraalit.
+    description: Etiikka and Moraalit.  
 empty: 
   page: 
     title: Sivua ei löytynyt
@@ -606,6 +608,11 @@ profile:
   userbio: Seikkailua ja koodausta.
   follownum: "0"
   followernum: "0"
+  text1: Kaikki komponentit voi kääntää omalle kielelle
+  text2: 1. Valitse Avaa
+  text3: 2. Muokkaa vapaasti
+  text4: 3. Tallenna tiedot
+  answer: Hyvin pyyhkii!
 nav:
   site:
     title: Vapaus
@@ -784,6 +791,33 @@ site:
   description: Vapaa ja avoin alusta
   offer: Julkaisupäivä lähenee
 values:
+  innovation:
+    title: Keksinnöt
+    description: Luovuus ja uteliaisuus auttaa
+  integrity:
+    title: Rehellisyys
+    description: Moraalit ohjaa toimintaa
+  collaboration:
+    title: Yhteistyö
+    description: Muiden mukana on mukavaa
+  excellence:
+    title: Erinomaisuus
+    description: Parhaimpaan pyrkiminen
+  adaptability:
+    title: Muuttuvainen
+    description: Ajan mukaan kehittyvät toimet
+  empathy:
+    title: Empatia
+    description: Auta ja saa apua
+  purpose:
+    title: Merkitys
+    description: Sisältöä elämään
+  transparency:
+    title: Avoimuus
+    description: Ei paljoa peiteltävää
+  sustainability:
+    title: Kestävyys
+    description: Oikeasti järkevät ratkaisut
   principles: Perusarvot
   illustration: Kuvaus
   values: arvoista
