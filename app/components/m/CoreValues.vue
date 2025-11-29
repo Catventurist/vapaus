@@ -67,16 +67,8 @@ const values = [
 </script>
 
 <template>
-  <section class="py-16 md:py-24">
+  <UPageSection id="values" :title="$t('header.values.title')" :description="$t('header.values.description')">
     <div class="container mx-auto px-4 md:px-6 2xl:max-w-[1400px]">
-      <div class="mb-16 text-center">
-        <h2 class="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-          {{ $t('header.values.title') }}
-        </h2>
-        <p class="text-muted mx-auto max-w-3xl text-lg">
-          {{ $t('header.values.description') }}
-        </p>
-      </div>
       <Motion
         initial="hidden" animate="visible" :variants="container"
         :transition="{ type: 'spring', delayChildren: 0.5, staggerChildren: 0.2 }" as="div"
@@ -96,5 +88,5 @@ const values = [
         </Motion>
       </Motion>
     </div>
-  </section>
+  </UPageSection>
 </template>

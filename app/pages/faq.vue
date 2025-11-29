@@ -37,6 +37,7 @@ useSeoMeta({
   <UContainer v-if="page">
     <UPage>
       <ClientOnly>
+        <MSimpleCalendar />
         <MLandingFaq :page="page" />
         <MProjectLine />
       </ClientOnly>

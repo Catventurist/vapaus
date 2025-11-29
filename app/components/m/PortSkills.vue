@@ -101,7 +101,7 @@ const items: TabsItem[] = [
 </script>
 
 <template>
-  <UPageSection :headline="$t('skills.badge')" :title="$t('skills.title')" :description="$t('skills.description')">
+  <UPageSection id="skills" :headline="$t('skills.badge')" :title="$t('skills.title')" :description="$t('skills.description')">
     <UTabs :items="items" class="w-full">
       <template #tech>
         <AnimatePresence mode="wait">

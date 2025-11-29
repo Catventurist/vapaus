@@ -18,10 +18,12 @@ defineI18nRoute({
 
 <template>
   <UPage>
-    <UPageSection :title="$t('header.profile.title')" :description="$t('header.profile.description')">
+    <MProHeader />
+    <ClientOnly>
+      <MPortSkills />
       <MFeatureAround />
+      <MVideoCta />
       <MCoreValues />
-      <MLandingIntegrations />
-    </UPageSection>
+    </ClientOnly>
   </UPage>
 </template>

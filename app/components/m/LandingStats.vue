@@ -6,22 +6,18 @@ const ICON_STAGGER_OFFSET = 0.2
 const VALUE_DELAY_OFFSET = 0.3
 const TREND_STAGGER_OFFSET = 0.5
 
-/* type StatsCardsProps = {
-  title?: string
+type StatsCardsProps = {
+  value?: string
+  label?: string
   description?: string
-  stats?: Array<{
-    value?: string | number
-    label?: string
-    description?: string
-    icon?: string
-    trend?: {
-      value?: string
-      direction?: 'up' | 'down'
-    }
-  }>
-} */
+  icon?: string
+  trend?: {
+    value?: string
+    direction?: 'up' | 'down'
+  }
+}
 
-const stats = [
+const stats: StatsCardsProps[] = [
   {
     value: '2.5',
     label: $t('stats.revenue.title'),
@@ -78,7 +74,7 @@ const isInView = useInView(aref)
           :animate="isInView ? { rotate: 0, scale: 1 } : { rotate: -10, scale: 0.8 }"
           :initial="{ rotate: -10, scale: 0.8 }" class="mb-4 text-3xl"
           :transition="{ duration: 0.6, delay: index * STAGGER_DELAY + ICON_STAGGER_OFFSET, type: 'spring', stiffness: 200 }">
-          <Icon :name="stat.icon" class="size-8" />
+          <Icon :name="String(stat.icon)" class="size-8" />
         </motion.div>
         <motion.div
           :animate="isInView ? { scale: 1 } : { scale: 0.5 }" :initial="{ scale: 0.5 }"

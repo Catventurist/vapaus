@@ -207,9 +207,11 @@ header:
   hero: Alku
   quotes: Lausahdukset
   settings: Asetukset
+  skills: Taidot
+  video: Video
   values: 
     title: Arvot
-    description: Etiikka and Moraalit.  
+    description: Etiikka and Moraalit.
 empty: 
   page: 
     title: Sivua ei löytynyt

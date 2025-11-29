@@ -207,6 +207,8 @@ header:
   hero: Hero
   quotes: Quotes
   settings: Settings
+  skills: Skills
+  video: Video
   values: 
     title: Values
     description: Ethics and Morals.

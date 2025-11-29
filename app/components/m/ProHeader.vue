@@ -6,25 +6,21 @@ const activeSection = ref('')
 const localePath = useLocalePath()
 
 const navLinks: NavigationMenuItem[] = [{
-  label: $t('header.hero'),
-  icon: 'i-lucide-cat',
-  to: '#hero'
+  label: $t('header.skills'),
+  icon: 'i-lucide-hammer',
+  to: '#skills'
 }, {
-  label: $t('header.about'),
-  icon: 'i-lucide-info',
-  to: '#about'
+  label: $t('header.features'),
+  icon: 'i-lucide-bird',
+  to: '#features'
 }, {
-  label: $t('header.blog'),
-  icon: 'i-lucide-newspaper',
-  to: '#blog'
+  label: $t('header.video'),
+  icon: 'i-lucide-video',
+  to: '#video'
 }, {
-  label: $t('header.quotes'),
-  icon: 'i-lucide-user',
-  to: '#quotes'
-}, {
-  label: $t('header.faq'),
-  icon: 'i-lucide-list',
-  to: '#faq'
+  label: $t('header.values.title'),
+  icon: 'i-lucide-scale',
+  to: '#values'
 }]
 
 const items = ref<DropdownMenuItem[]>([
@@ -62,6 +58,11 @@ const items = ref<DropdownMenuItem[]>([
     label: 'Gitlab',
     icon: 'simple-icons-gitlab',
     to: 'https://gitlab.com/catventurist'
+  },
+  {
+    label: 'Codepen',
+    icon: 'simple-icons-codepen',
+    to: 'https://codepen.io/Catventurist'
   }
 ])
 

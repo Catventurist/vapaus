@@ -33,7 +33,7 @@ function handleClick() {
           :ui="{ leadingIcon: 'duration-300 group-hover:rotate-45' }" class="group" @click="handleClick" />
       </Motion>
       <Motion
-        v-if="isOpen" :layout="true" class="mt-4 text-secondary border-info" :initial="{ opacity: 0 }"
+        v-if="isOpen" :layout="true" class="mt-4 text-muted border-info" :initial="{ opacity: 0 }"
         :animate="{ opacity: 1 }" :transition="{ delay: 0.2 }">
         <p class="text-info text-lg">
           {{ props.content }}
